@@ -1,0 +1,75 @@
+.navbar-user-info {
+  height: 149px;
+  width: 260px;
+  background-color: #090b32;
+  border: 1px solid #242648;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+
+  .navbar-user-logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 33px;
+    margin-left: 35px;
+    img {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+    }
+    img:first-child {
+      z-index: 1;
+    }
+    img:last-child {
+      z-index: 2;
+    }
+    span {
+      font-weight: 700;
+      font-size: 14px;
+      color: #ffffff;
+      font-family: "Inter", sans-serif;
+      margin-left: 50px;
+    }
+  }
+
+  .navbar-user-balance-container {
+     li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      padding-bottom: 8px; /* добавить отступ между li элементами */
+    }
+
+    img {
+      height: 18px;
+      margin-right: 8px; /* добавить отступ между иконкой и текстом */
+    }
+
+    .add-icon{
+      height: 10px;
+      position: absolute;
+      left: 50px;
+      top: 145px
+    }
+
+    .navbar-user-balance-text {
+      margin-left: 10px;
+      color: #8186af;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      font-family: "Montserrat Alternates", sans-serif;
+      padding-right: 8px; /* добавить отступ справа */
+    }
+
+    .navbar-user-balance {
+      margin-left: 20px;
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      font-family: "Montserrat Alternates", sans-serif;
+    }
+  }
+}

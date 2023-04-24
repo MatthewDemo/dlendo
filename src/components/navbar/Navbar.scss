@@ -1,0 +1,27 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 285px;
+  height: 100%;
+  background-color: #15173c;
+  border-right: 1px solid #26264a;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-top: 11px;
+    justify-content: center;
+    width: 195px;
+    margin-left: 32px;
+    img {
+      height: 40px;
+    }
+    span {
+      font-family: "Montserrat Alternates", sans-serif;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 35px;
+    }
+  }
+}
