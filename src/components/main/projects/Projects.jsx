@@ -3,6 +3,10 @@ import LeftArrow from "../../../assets/img/main-header-icons/left-arrow.svg";
 import RightArrow from "../../../assets/img/main-header-icons/right-arrow.svg";
 import Card from "./Card/Card";
 import styled from "styled-components";
+import Home1 from "../../../assets/img/houses/home1.svg";
+import Home2 from "../../../assets/img/houses/home2.svg";
+import Home3 from "../../../assets/img/houses/home3.svg";
+import Home4 from "../../../assets/img/houses/home4.svg";
 
 const Header = styled.header`
   display: flex;
@@ -79,19 +83,69 @@ const Projects = () => {
   const [activeButton, setActiveButton] = useState("new");
   const [currentPage, setCurrentPage] = useState(1);
   const cardsPerPage = 4;
-  
-  const allCards = [];
-  for (let i = 0; i < 12; i++) {
-    allCards.push(<Card key={i} />);
-  }
-  const cardsToDisplay = allCards.slice(
-    (currentPage - 1) * cardsPerPage,
-    currentPage * cardsPerPage
-  );
+
+  //   const allCards = [];
+  //   for (let i = 0; i < 12; i++) {
+  //     allCards.push(<Card key={i} />);
+  //   }
+  //   const cardsToDisplay = allCards.slice(
+  //     (currentPage - 1) * cardsPerPage,
+  //     currentPage * cardsPerPage
+  //   );
+  const allCards = [
+    {
+      photos: [Home1],
+      address: "Alberchtstrabe 335",
+      alreadyFunded: 425000,
+      totalPrice: 847000,
+      return: "8% p.a.",
+      term: "24 month",
+      location: "Germany",
+      distribution: "Yearly",
+      description:
+        "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
+    },
+    {
+      photos: [Home2],
+      address: "Grebenhain 36355",
+      alreadyFunded: 425000,
+      totalPrice: 847000,
+      return: "8% p.a.",
+      term: "24 month",
+      location: "Germany",
+      distribution: "Yearly",
+      description:
+        "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
+    },
+    {
+      photos: [Home3],
+      address: "Hosenfeld 36154",
+      alreadyFunded: 425000,
+      totalPrice: 847000,
+      return: "8% p.a.",
+      term: "24 month",
+      location: "Germany",
+      distribution: "Yearly",
+      description:
+        "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
+    },
+    {
+      photos: [Home4],
+      address: "Lauterbach (Hessen) 36341",
+      alreadyFunded: 425000,
+      totalPrice: 847000,
+      return: "8% p.a.",
+      term: "24 month",
+      location: "Germany",
+      distribution: "Yearly",
+      description:
+        "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
+    },
+  ];
 
   const handleButtonClick = (buttonType) => {
     setActiveButton(buttonType);
-    setCurrentPage(1); // reset page when switching tabs
+    setCurrentPage(1);
   };
 
   const handleSwitchButtonClick = (direction) => {
@@ -132,7 +186,11 @@ const Projects = () => {
           </SwitchButton>
         </SwitchWrapper>
       </Header>
-      <CardsWrapper>{cardsToDisplay}</CardsWrapper>
+      <CardsWrapper>
+        {allCards.map((card) => (
+          <Card card={card} />
+        ))}
+      </CardsWrapper>
     </div>
   );
 };

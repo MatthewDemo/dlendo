@@ -1,32 +1,35 @@
 import React, { useState } from "react";
 import LeftWhiteArrow from "../../../../assets/img/projects/left-white-arrow.svg";
 import RightWhiteArrow from "../../../../assets/img/projects/right-white-arrow.svg";
-import styled from "styled-components";
-import Home1 from "../../../../assets/img/houses/home1.svg";
+import RightCircleButton from "../../../../assets/img/projects/right-circle-button.svg";
+import NewIcon from "../../../../assets/img/projects/new-icon.svg";
 
+import styled from "styled-components";
+
+const ButtonWrapper = styled.div`
+  margin: -15px 24px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+`;
 const CardWrapper = styled.div`
-  width: 255px;
+  width: 240px;
   height: 460px;
   background-color: #15173c;
   border: 1px solid #26264a;
   margin-left: 15px;
+  position: relative;
 `;
-
 const ImageWrapper = styled.div`
-
   height: 196px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 `;
-
-const Image = styled.img`
-  max-width: 100%;
-  max-height: 100%;
-`;
-
 const AddressWrapper = styled.div`
   height: 38px;
   display: flex;
@@ -38,15 +41,14 @@ const AddressWrapper = styled.div`
   font-size: 14px;
   color: #fff;
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   left: 0;
   right: 0;
 `;
-
 const Button = styled.button`
   width: 30px;
   height: 28px;
-  border: none;
+  border: 1px solid #26264A;
   border-radius: ${({ left }) => (left ? "50px 0 0 50px" : "0 14px 14px 0")};
   display: flex;
   justify-content: center;
@@ -60,7 +62,6 @@ const Button = styled.button`
     opacity: 1;
   }
 `;
-
 const LeftButton = styled(Button)`
   position: absolute;
   top: 50%;
@@ -68,7 +69,6 @@ const LeftButton = styled(Button)`
   transform: translateY(-50%);
   border-radius: 0 50px 50px 0;
 `;
-
 const RightButton = styled(Button)`
   position: absolute;
   top: 50%;
@@ -76,24 +76,20 @@ const RightButton = styled(Button)`
   transform: translateY(-50%);
   border-radius: 50px 0 0 50px;
 `;
+const CircleButton = styled.button`
+  width: 28px;
+  height: 28px;
+  border: 1px solid #323054;
+  border-radius: 50%;
+  background-color: #1e2044;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+`;
 
-const Card = () => {
+const Card = ({ card }) => {
   const [activePhoto, setActivePhoto] = useState(0);
-  const allCards = [
-    {
-      photos: [Home1],
-      address: "Alberchtstrabe 335",
-      alreadyFunded: 425000,
-      totalPrice: 847000,
-      return: "8% p.a.",
-      term: "24 month",
-      location: "Germany",
-      distribution: "Yearly",
-      description:
-        "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
-    },
-  ];
-  const { photos, address } = allCards[0];
 
   const handleLeftButtonClick = () => {
     if (activePhoto > 0) {
@@ -102,7 +98,7 @@ const Card = () => {
   };
 
   const handleRightButtonClick = () => {
-    if (activePhoto < photos.length - 1) {
+    if (activePhoto < card.photos.length - 1) {
       setActivePhoto(activePhoto + 1);
     }
   };
@@ -113,12 +109,16 @@ const Card = () => {
         <LeftButton onClick={handleLeftButtonClick}>
           <img src={LeftWhiteArrow} alt="" />
         </LeftButton>
-        <Image src={photos[activePhoto]} alt="" />
+        <img src={card.photos[activePhoto]} alt="" />
         <RightButton onClick={handleRightButtonClick}>
           <img src={RightWhiteArrow} alt="" />
         </RightButton>
-        <AddressWrapper>{address}</AddressWrapper>
+        <AddressWrapper>{card.address}</AddressWrapper>
       </ImageWrapper>
+      <ButtonWrapper>
+        <CircleButton><img src={NewIcon} alt="" /></CircleButton>
+        <CircleButton><img src={RightCircleButton} alt="" /></CircleButton>
+      </ButtonWrapper>
     </CardWrapper>
   );
 };
