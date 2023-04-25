@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 11px;
+    justify-content: center;
+    width: 195px;
+    margin-left: 32px;
+    img {
+      height: 40px;
+    }
+    span {
+      font-family: "Montserrat Alternates", sans-serif;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 35px;
+    }
+  }

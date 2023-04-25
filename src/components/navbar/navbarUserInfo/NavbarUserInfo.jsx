@@ -1,15 +1,23 @@
 import React from "react";
-import NavbarUserLogo from "../../assets/navbar-user-logo.svg";
-import NavbarEllipseLogo from "../../assets/navbar-ellipse-logo.svg";
-import BalanceIcon from '../../assets/balance-icon.svg';
-import BalanceAddIcon from '../../assets/balance-add-icon.svg'
-import FundedIcon from '../../assets/funded-icon.svg';
-import PendingIcon from '../../assets/pending-icon.svg';
+import NavbarUserLogo from "../../../assets/navbar-user-logo.svg";
+import NavbarEllipseLogo from "../../../assets/navbar-ellipse-logo.svg";
+import BalanceIcon from "../../../assets/balance-icon.svg";
+import BalanceAddIcon from "../../../assets/balance-add-icon.svg";
+import FundedIcon from "../../../assets/funded-icon.svg";
+import PendingIcon from "../../../assets/pending-icon.svg";
+import VesiIcon from '../../../assets/vesi-icon.svg'
+import GearIcon from '../../../assets/gear-icon.svg'
+import BellIcon from '../../../assets/bell-icon.svg'
 import "./NavbarUserInfo.scss";
 
 const NavbarUserInfo = () => {
   return (
     <div className="navbar-user-info">
+      <div className="button-container">
+        <button><img src={VesiIcon} alt="" /></button>
+        <button><img src={GearIcon} alt="" /></button>
+        <button><img src={BellIcon} alt="" /></button>
+      </div>
       <div className="navbar-user-logo">
         <img src={NavbarUserLogo} alt="" />
         <img src={NavbarEllipseLogo} alt="" />

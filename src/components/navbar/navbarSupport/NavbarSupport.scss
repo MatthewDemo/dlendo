@@ -1,0 +1,57 @@
+.navbar-support {
+    margin-top: 30px;
+  
+    p {
+      color: #8186af;
+      font-size: 10px;
+      font-weight: 700;
+      font-family: "Inter", sans-serif;
+      margin-left: 35px;
+      line-height: 12px;
+    }
+  
+    ul {
+      margin-left: -20px;
+      li {
+        width: 235px;
+        height: 38px;
+        border-radius: 5px;
+        list-style: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        border: 1px solid #ffffff00;
+  
+        &:hover {
+          background-color: #fa544d;
+          border: 1px solid #ffffff;
+          span {
+            color: #ffffff;
+          }
+        }
+  
+        img {
+          margin-left: 30px;
+        }
+
+        .fb-icon{
+          margin-left: 27px;
+        }
+
+        .fb-text{
+          margin-left: 30px;
+        }
+  
+        span {
+          color: #8186af;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17.07px;
+          font-family: "Montserrat", sans-serif;
+          margin-left: 34px;
+        }
+      }
+    }
+  }
+  
