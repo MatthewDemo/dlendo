@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LeftWhiteArrow from "../../../../../assets/img/projects/left-white-arrow.svg";
 import RightWhiteArrow from "../../../../../assets/img/projects/right-white-arrow.svg";
+import EyeIcon from "../../../../../assets/img/projects/eye-icon.svg";
 import styled from "styled-components";
 
 const Button = styled.button`
@@ -42,6 +43,14 @@ const ImageWrapper = styled.div`
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+  cursor: pointer;
+  img {
+    transition: opacity 0.3s ease-in-out;
+    &:hover {
+      opacity: 0.4;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+  }
 `;
 const AddressWrapper = styled.div`
   height: 38px;
@@ -59,6 +68,27 @@ const AddressWrapper = styled.div`
   right: 0;
 `;
 
+const OverlayButton = styled.button`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: rgba(30, 32, 68, 0.7);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  ${ImageWrapper}:hover & {
+    opacity: 1;
+  }
+`;
+
 
 const Image = ({card}) => {
   const [activePhoto, setActivePhoto] = useState(0);
@@ -74,6 +104,11 @@ const Image = ({card}) => {
       setActivePhoto(activePhoto + 1);
     }
   };
+
+  const handleOverlayButtonClick = () => {
+    // Действия при нажатии на кнопку
+  };
+
   return (
     <ImageWrapper>
       <LeftButton onClick={handleLeftButtonClick}>
@@ -84,6 +119,9 @@ const Image = ({card}) => {
         <img src={RightWhiteArrow} alt="" />
       </RightButton>
       <AddressWrapper>{card.address}</AddressWrapper>
+      <OverlayButton onClick={handleOverlayButtonClick}>
+        <img src={EyeIcon} alt="" />
+      </OverlayButton>
     </ImageWrapper>
   );
 };
