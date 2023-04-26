@@ -8,6 +8,7 @@ import ReturnTermBlock from "./return-term-block/ReturnTermBlock";
 import LocationDistributionBlock from "./location-distribution-block/LocationDistributionBlock";
 
 import styled from "styled-components";
+import DescriptionBlock from "./description-block/DescriptionBlock";
 
 const ButtonWrapper = styled.div`
   margin: -15px 24px 0;
@@ -129,6 +130,7 @@ const Card = ({ card }) => {
       <ProgressBar card={card}/>
       <ReturnTermBlock card={card}/>
       <LocationDistributionBlock card={card}/>
+      <DescriptionBlock card={card} />
     </CardWrapper>
   );
 };

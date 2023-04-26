@@ -107,7 +107,7 @@ const Projects = () => {
       location: "Norway",
       distribution: "Yearly",
       description:
-        "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
+        "Dieses wunderschöne Einfamilienhaus bietet Ihnen modernen Komfort und eine einzigartige Atmosphäre,",
     },
     {
       photos: [Home3],
@@ -119,7 +119,7 @@ const Projects = () => {
       location: "England",
       distribution: "Yearly",
       description:
-        "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
+        "Das charmante Stadthaus im Herzen der Stadt vereint historischen Charme mit zeitgemäßer Ausstattung",
     },
     {
       photos: [Home4],
@@ -131,7 +131,7 @@ const Projects = () => {
       location: "Austria",
       distribution: "Yearly",
       description:
-        "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
+        "Dieses stilvolle Mehrfamilienhaus besticht durch seine moderne Architektur und hochwertige Ausstattung.",
     },
   ];
 
