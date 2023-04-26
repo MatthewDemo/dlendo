@@ -3,6 +3,7 @@ import LeftWhiteArrow from "../../../../assets/img/projects/left-white-arrow.svg
 import RightWhiteArrow from "../../../../assets/img/projects/right-white-arrow.svg";
 import RightCircleButton from "../../../../assets/img/projects/right-circle-button.svg";
 import NewIcon from "../../../../assets/img/projects/new-icon.svg";
+import ProgressBar from "./progressBar/ProgressBar";
 
 import styled from "styled-components";
 
@@ -48,7 +49,7 @@ const AddressWrapper = styled.div`
 const Button = styled.button`
   width: 30px;
   height: 28px;
-  border: 1px solid #26264A;
+  border: 1px solid rgba(38, 38, 74, 0.4);
   border-radius: ${({ left }) => (left ? "50px 0 0 50px" : "0 14px 14px 0")};
   display: flex;
   justify-content: center;
@@ -116,9 +117,14 @@ const Card = ({ card }) => {
         <AddressWrapper>{card.address}</AddressWrapper>
       </ImageWrapper>
       <ButtonWrapper>
-        <CircleButton><img src={NewIcon} alt="" /></CircleButton>
-        <CircleButton><img src={RightCircleButton} alt="" /></CircleButton>
+        <CircleButton>
+          <img src={NewIcon} alt="" />
+        </CircleButton>
+        <CircleButton>
+          <img src={RightCircleButton} alt="" />
+        </CircleButton>
       </ButtonWrapper>
+      <ProgressBar card={card}/>
     </CardWrapper>
   );
 };

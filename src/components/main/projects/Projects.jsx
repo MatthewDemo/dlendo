@@ -84,20 +84,12 @@ const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const cardsPerPage = 4;
 
-  //   const allCards = [];
-  //   for (let i = 0; i < 12; i++) {
-  //     allCards.push(<Card key={i} />);
-  //   }
-  //   const cardsToDisplay = allCards.slice(
-  //     (currentPage - 1) * cardsPerPage,
-  //     currentPage * cardsPerPage
-  //   );
   const allCards = [
     {
       photos: [Home1],
       address: "Alberchtstrabe 335",
       alreadyFunded: 425000,
-      totalPrice: 847000,
+      totalPrice: 642000,
       return: "8% p.a.",
       term: "24 month",
       location: "Germany",
@@ -120,7 +112,7 @@ const Projects = () => {
     {
       photos: [Home3],
       address: "Hosenfeld 36154",
-      alreadyFunded: 425000,
+      alreadyFunded: 45000,
       totalPrice: 847000,
       return: "8% p.a.",
       term: "24 month",
@@ -132,8 +124,8 @@ const Projects = () => {
     {
       photos: [Home4],
       address: "Lauterbach (Hessen) 36341",
-      alreadyFunded: 425000,
-      totalPrice: 847000,
+      alreadyFunded: 35000,
+      totalPrice: 235000,
       return: "8% p.a.",
       term: "24 month",
       location: "Germany",
