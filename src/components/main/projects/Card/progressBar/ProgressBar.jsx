@@ -51,6 +51,7 @@ const ProgressBar = ({ card }) => {
     letterSpacing: "0em",
     textAlign: "left",
     marginTop: "3px",
+    marginRight: "3px"
   };
   const fundedTextStyle = {
     color: "rgba(250, 84, 77, 1)",
@@ -75,7 +76,7 @@ const ProgressBar = ({ card }) => {
             funded
           </span>
         </div>
-        <div style={{ display: "flex", width: "100%", margin: "9px" }}>
+        <div style={{ display: "flex", width: "100%", marginTop: "5px" }}>
           <div style={filledStyle} />
           <div style={unfilledStyle} />
         </div>

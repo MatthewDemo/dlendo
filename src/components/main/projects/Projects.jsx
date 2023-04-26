@@ -90,8 +90,8 @@ const Projects = () => {
       address: "Alberchtstrabe 335",
       alreadyFunded: 425000,
       totalPrice: 642000,
-      return: "8% p.a.",
-      term: "24 month",
+      return: 8,
+      term: 24,
       location: "Germany",
       distribution: "Yearly",
       description:
@@ -102,8 +102,8 @@ const Projects = () => {
       address: "Grebenhain 36355",
       alreadyFunded: 425000,
       totalPrice: 847000,
-      return: "8% p.a.",
-      term: "24 month",
+      return: 9,
+      term: 22,
       location: "Germany",
       distribution: "Yearly",
       description:
@@ -114,8 +114,8 @@ const Projects = () => {
       address: "Hosenfeld 36154",
       alreadyFunded: 45000,
       totalPrice: 847000,
-      return: "8% p.a.",
-      term: "24 month",
+      return: 7,
+      term: 26,
       location: "Germany",
       distribution: "Yearly",
       description:
@@ -126,8 +126,8 @@ const Projects = () => {
       address: "Lauterbach (Hessen) 36341",
       alreadyFunded: 35000,
       totalPrice: 235000,
-      return: "8% p.a.",
-      term: "24 month",
+      return: 10,
+      term: 19,
       location: "Germany",
       distribution: "Yearly",
       description:

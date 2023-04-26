@@ -4,6 +4,7 @@ import RightWhiteArrow from "../../../../assets/img/projects/right-white-arrow.s
 import RightCircleButton from "../../../../assets/img/projects/right-circle-button.svg";
 import NewIcon from "../../../../assets/img/projects/new-icon.svg";
 import ProgressBar from "./progressBar/ProgressBar";
+import ReturnTermBlock from "./return-term-block/ReturnTermBlock";
 
 import styled from "styled-components";
 
@@ -125,6 +126,7 @@ const Card = ({ card }) => {
         </CircleButton>
       </ButtonWrapper>
       <ProgressBar card={card}/>
+      <ReturnTermBlock card={card}/>
     </CardWrapper>
   );
 };
