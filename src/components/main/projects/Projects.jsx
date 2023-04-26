@@ -104,7 +104,7 @@ const Projects = () => {
       totalPrice: 847000,
       return: 9,
       term: 22,
-      location: "Germany",
+      location: "Norway",
       distribution: "Yearly",
       description:
         "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
@@ -116,7 +116,7 @@ const Projects = () => {
       totalPrice: 847000,
       return: 7,
       term: 26,
-      location: "Germany",
+      location: "England",
       distribution: "Yearly",
       description:
         "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
@@ -128,7 +128,7 @@ const Projects = () => {
       totalPrice: 235000,
       return: 10,
       term: 19,
-      location: "Germany",
+      location: "Austria",
       distribution: "Yearly",
       description:
         "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
