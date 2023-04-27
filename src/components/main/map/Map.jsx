@@ -1,15 +1,23 @@
-import React from 'react'
-import './Map.scss'
-import MapHeader from './mapHeader/MapHeader'
-import MapView from './mapView/MapView'
+import React from "react";
+import "./Map.scss";
+import MapHeader from "./mapHeader/MapHeader";
+import WrappedMap from "./mapView/MapView";
 
-const Map = () => {
+const Map = ({allCards}) => {
   return (
     <div>
       <MapHeader />
-      <MapView />
+      <div style={{ width: "1030px", height: '424px' }}>
+        <WrappedMap
+          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
+          loadingElement={<div style={{ height: "100%" }} />}
+          containerElement={<div style={{ height: "100%" }} />}
+          mapElement={<div style={{ height: "100%" }} />}
+          allCards={allCards}
+        />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Map
+export default Map;

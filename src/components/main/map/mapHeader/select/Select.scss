@@ -41,12 +41,14 @@
 .select__body {
   border: 1px solid rgba(50, 48, 84, 1);
   border-radius: 10px;
+  background-color: rgba(9, 11, 50, 1);
   border-top: 0;
   left: 0;
   position: absolute;
   right: 0;
   top: 100%;
   display: none;
+  z-index: 2;
 }
 
 .select__item {
