@@ -35,6 +35,21 @@ const RightButton = styled(Button)`
   transform: translateY(-50%);
   border-radius: 50px 0 0 50px;
 `;
+const AddressWrapper = styled.div`
+height: 38px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(0, 0, 0, 0.4);
+font-family: "Inter", sans-serif;
+font-weight: 700;
+font-size: 14px;
+color: #fff;
+position: absolute;
+bottom: 3px;
+left: 0;
+right: 0;
+`;
 const ImageWrapper = styled.div`
   height: 196px;
   display: flex;
@@ -43,29 +58,10 @@ const ImageWrapper = styled.div`
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  cursor: pointer;
-  img {
-    transition: opacity 0.3s ease-in-out;
-    &:hover {
-      opacity: 0.4;
-      background-color: rgba(0, 0, 0, 0.9);
-    }
+  &:hover .main-img {
+    opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.9);
   }
-`;
-const AddressWrapper = styled.div`
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  color: #fff;
-  position: absolute;
-  bottom: 3px;
-  left: 0;
-  right: 0;
 `;
 
 const OverlayButton = styled.button`
@@ -114,7 +110,7 @@ const Image = ({card}) => {
       <LeftButton onClick={handleLeftButtonClick}>
         <img src={LeftWhiteArrow} alt="" />
       </LeftButton>
-      <img src={card.photos[activePhoto]} alt="" />
+      <img className="main-img" src={card.photos[activePhoto]} alt="" />
       <RightButton onClick={handleRightButtonClick}>
         <img src={RightWhiteArrow} alt="" />
       </RightButton>
