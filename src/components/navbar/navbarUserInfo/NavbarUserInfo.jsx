@@ -13,7 +13,7 @@ import "./NavbarUserInfo.scss";
 const NavbarUserInfo = () => {
   return (
     <div className="navbar-user-info">
-      <div className="button-container">
+      <div className="navbar-button-container">
         <button><img src={VesiIcon} alt="" /></button>
         <button><img src={GearIcon} alt="" /></button>
         <button><img src={BellIcon} alt="" /></button>

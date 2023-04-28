@@ -16,7 +16,7 @@ const PopupHouseInfo = ({ selectedHouse }) => {
           src={selectedHouse.photos[0]}
           alt=""
         />
-        <div className="button-container">
+        <div className="popup-button-container">
           <button className="circle-button">
             <img src={HotFireIcon} alt="" />
           </button>
