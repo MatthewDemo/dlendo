@@ -2,10 +2,9 @@ import React from "react";
 import "./AllProjects.scss";
 import Filter from "./filter/Filter";
 import Sort from "./sort/Sort";
-import { useSelector } from "react-redux";
+import AllProjectsCards from "./allProjectsCards/AllProjectsCards";
 
 const AllProjects = () => {
-  const allHouses = useSelector((state) => state.house.allHouses);
   return (
     <div className="all-projects-block">
       <p className="all-projects-header-text">All projects</p>
@@ -16,6 +15,7 @@ const AllProjects = () => {
           <Sort />
         </div>
       </div>
+      <AllProjectsCards />
     </div>
   );
 };

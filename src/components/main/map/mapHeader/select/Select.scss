@@ -1,11 +1,12 @@
 .select {
   margin-left: 20px;
-    position: relative;
+  position: relative;
   position: relative;
 }
 
 .select.is-active .select__body {
   display: block;
+  
 }
 
 .select__header {
@@ -54,7 +55,6 @@
   right: 0;
   top: 100%;
   display: none;
-  z-index: 2;
 }
 
 .select__item {

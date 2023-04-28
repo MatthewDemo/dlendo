@@ -49,15 +49,14 @@ const AddressWrapper = styled.div`
   font-size: 14px;
   color: #fff;
   position: absolute;
-  bottom: 3px;
+  bottom: 0px;
   left: 0;
   right: 0;
 `;
 const ImageWrapper = styled.div`
-  height: 196px;
+  height: 190px;
   display: flex;
   align-items: center;
-  margin-top: -3px;
   justify-content: space-between;
   position: relative;
   overflow: hidden;
