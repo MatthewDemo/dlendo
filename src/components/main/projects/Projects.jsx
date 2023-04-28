@@ -3,9 +3,7 @@ import LeftArrow from "../../../assets/img/main-header-icons/left-arrow.svg";
 import RightArrow from "../../../assets/img/main-header-icons/right-arrow.svg";
 import Card from "./Card/Card";
 import styled from "styled-components";
-import { useSelector } from 'react-redux'
-
-
+import { useSelector } from "react-redux";
 
 const Header = styled.header`
   display: flex;
@@ -82,8 +80,11 @@ const Projects = () => {
   const [activeButton, setActiveButton] = useState("new");
   const [currentPage, setCurrentPage] = useState(1);
   const cardsPerPage = 4;
-  const allHouses = useSelector((state) => state.house.allHouses)
+  const allHouses = useSelector((state) => state.house.allHouses);
 
+  const indexOfLastCard = currentPage * cardsPerPage;
+  const indexOfFirstCard = indexOfLastCard - cardsPerPage;
+  const currentCards = allHouses.slice(indexOfFirstCard, indexOfLastCard);
 
   const handleButtonClick = (buttonType) => {
     setActiveButton(buttonType);
@@ -129,7 +130,7 @@ const Projects = () => {
         </SwitchWrapper>
       </Header>
       <CardsWrapper>
-        {allHouses.map((card) => (
+        {currentCards.map((card) => (
           <Card card={card} />
         ))}
       </CardsWrapper>
