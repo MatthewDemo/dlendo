@@ -1,0 +1,76 @@
+.filter-select {
+    margin-left: 20px;
+    position: relative;
+    
+  }
+  .filter-select.is-active .select__body {
+    display: block;
+  }
+  
+  .filter-select-header {
+    border: 1px solid rgba(50, 48, 84, 1);
+    border-radius: 10px;
+    color: rgba(129, 134, 175, 1);
+    display: flex;
+    cursor: pointer;
+    height: 30px;
+  }
+  
+  .filter-select-header:focus {
+    outline: none;
+  }
+  
+  .filter-select-current {
+    font-size: 12px;
+    line-height: 24px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    }
+  
+  .filter-select-icon {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    margin-top: -4px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin-left: auto;
+  }
+  
+  .select__body {
+    border: 1px solid rgba(50, 48, 84, 1);
+    border-radius: 10px;
+    background-color: rgba(9, 11, 50, 1);
+    border-top: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    display: none;
+    z-index: 2;
+  }
+  
+  .select__item {
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    padding: 8px;
+    font-family: "Montserrat";
+    color: #8186af;
+    padding-left: 10px;
+    overflow: hidden;
+  }
+  .select__item:hover {
+    background-color: #fa544d;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+  }
+  
+  

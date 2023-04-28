@@ -1,0 +1,34 @@
+.filter {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.filter-button {
+  background: #1e2044;
+  border: 1px solid #323054;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  width: 110px;
+  height: 28px;
+  cursor: pointer;
+  margin-right: 16px;
+  border-radius: 15px;
+}
+
+.filter-button.active {
+    background: #FA544D;
+    border: 1px solid #323054;
+    color: #FFFFFF;
+  }
+
+.filter-dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}

@@ -20,6 +20,7 @@ const Button = styled.button`
     background-color: rgba(0, 0, 0, 0.55);
     opacity: 1;
   }
+  z-index: 1;
 `;
 const LeftButton = styled(Button)`
   position: absolute;
@@ -27,6 +28,7 @@ const LeftButton = styled(Button)`
   left: 0;
   transform: translateY(-50%);
   border-radius: 0 50px 50px 0;
+  z-index: 2;
 `;
 const RightButton = styled(Button)`
   position: absolute;
@@ -34,21 +36,22 @@ const RightButton = styled(Button)`
   right: 0;
   transform: translateY(-50%);
   border-radius: 50px 0 0 50px;
+  z-index: 2;
 `;
 const AddressWrapper = styled.div`
-height: 38px;
-display: flex;
-align-items: center;
-justify-content: center;
-background-color: rgba(0, 0, 0, 0.4);
-font-family: "Inter", sans-serif;
-font-weight: 700;
-font-size: 14px;
-color: #fff;
-position: absolute;
-bottom: 3px;
-left: 0;
-right: 0;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
 `;
 const ImageWrapper = styled.div`
   height: 196px;
@@ -59,10 +62,10 @@ const ImageWrapper = styled.div`
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  &:hover .main-img {
-    opacity: 0.4;
-    background-color: rgba(0, 0, 0, 0.9);
-  }
+   &:hover .main-img {
+     opacity: 0.4;
+     background-color: rgba(0, 0, 0, 0.9);
+   }
 `;
 
 const OverlayButton = styled.button`
@@ -86,13 +89,14 @@ const OverlayButton = styled.button`
   }
 `;
 
-
-const Image = ({card}) => {
+const Image = ({ card }) => {
   const [activePhoto, setActivePhoto] = useState(0);
 
   const handleLeftButtonClick = () => {
     if (activePhoto > 0) {
       setActivePhoto(activePhoto - 1);
+    } else {
+      setActivePhoto(card.photos.length - 1);
     }
   };
 

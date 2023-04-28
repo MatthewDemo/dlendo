@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import Home1 from "../../assets/img/houses/home1.svg";
+import Home1_1 from "../../assets/img/houses/home1.1.jfif";
 import Home2 from "../../assets/img/houses/home2.svg";
 import Home3 from "../../assets/img/houses/home3.svg";
 import Home4 from "../../assets/img/houses/home4.svg";
@@ -11,7 +12,7 @@ import Home8 from "../../assets/img/houses/home8.svg";
 const initialState = {
   allHouses: [
     {
-      photos: [Home1],
+      photos: [Home1, Home1_1],
       address: "Alberchtstrabe 335",
       alreadyFunded: 425000,
       totalPrice: 642000,

@@ -1,5 +1,6 @@
 .all-projects-block {
   margin-top: 50px;
+  width: 1070px;
 
   .all-projects-header-text {
     font-family: "Kanit";
@@ -9,5 +10,30 @@
     line-height: 30px;
     color: #8186af;
     margin-left: 20px;
+  }
+
+  .filter-sort-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sort-block {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    right: 20px;
+    margin-left: auto;
+  }
+
+  .sort-block p {
+    margin-right: 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ffffff;
   }
 }
