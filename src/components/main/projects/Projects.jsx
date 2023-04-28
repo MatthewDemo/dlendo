@@ -3,6 +3,8 @@ import LeftArrow from "../../../assets/img/main-header-icons/left-arrow.svg";
 import RightArrow from "../../../assets/img/main-header-icons/right-arrow.svg";
 import Card from "./Card/Card";
 import styled from "styled-components";
+import { useSelector } from 'react-redux'
+
 
 
 const Header = styled.header`
@@ -76,61 +78,12 @@ const CardsWrapper = styled.div`
   display: flex;
 `;
 
-const Projects = ({allCards}) => {
+const Projects = () => {
   const [activeButton, setActiveButton] = useState("new");
   const [currentPage, setCurrentPage] = useState(1);
   const cardsPerPage = 4;
+  const allHouses = useSelector((state) => state.house.allHouses)
 
-  // const allCards = [
-  //   {
-  //     photos: [Home1],
-  //     address: "Alberchtstrabe 335",
-  //     alreadyFunded: 425000,
-  //     totalPrice: 642000,
-  //     return: 8,
-  //     term: 24,
-  //     location: "Germany",
-  //     distribution: "Yearly",
-  //     description:
-  //       "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
-  //   },
-  //   {
-  //     photos: [Home2],
-  //     address: "Grebenhain 36355",
-  //     alreadyFunded: 425000,
-  //     totalPrice: 847000,
-  //     return: 9,
-  //     term: 22,
-  //     location: "Norway",
-  //     distribution: "Yearly",
-  //     description:
-  //       "Dieses wunderschöne Einfamilienhaus bietet Ihnen modernen Komfort und eine einzigartige Atmosphäre,",
-  //   },
-  //   {
-  //     photos: [Home3],
-  //     address: "Hosenfeld 36154",
-  //     alreadyFunded: 45000,
-  //     totalPrice: 847000,
-  //     return: 7,
-  //     term: 26,
-  //     location: "England",
-  //     distribution: "Yearly",
-  //     description:
-  //       "Das charmante Stadthaus im Herzen der Stadt vereint historischen Charme mit zeitgemäßer Ausstattung",
-  //   },
-  //   {
-  //     photos: [Home4],
-  //     address: "Lauterbach (Hessen) 36341",
-  //     alreadyFunded: 35000,
-  //     totalPrice: 235000,
-  //     return: 10,
-  //     term: 19,
-  //     location: "Austria",
-  //     distribution: "Yearly",
-  //     description:
-  //       "Dieses stilvolle Mehrfamilienhaus besticht durch seine moderne Architektur und hochwertige Ausstattung.",
-  //   },
-  // ];
 
   const handleButtonClick = (buttonType) => {
     setActiveButton(buttonType);
@@ -138,7 +91,7 @@ const Projects = ({allCards}) => {
   };
 
   const handleSwitchButtonClick = (direction) => {
-    const totalPages = Math.ceil(allCards.length / cardsPerPage);
+    const totalPages = Math.ceil(allHouses.length / cardsPerPage);
     if (direction === "left") {
       setCurrentPage((prevPage) => (prevPage > 1 ? prevPage - 1 : totalPages));
     } else if (direction === "right") {
@@ -168,7 +121,7 @@ const Projects = ({allCards}) => {
             <img src={LeftArrow} alt="" />
           </SwitchButton>
           <PageNumber>
-            {currentPage}/{Math.ceil(allCards.length / cardsPerPage)}
+            {currentPage}/{Math.ceil(allHouses.length / cardsPerPage)}
           </PageNumber>
           <SwitchButton onClick={() => handleSwitchButtonClick("right")}>
             <img src={RightArrow} alt="" />
@@ -176,7 +129,7 @@ const Projects = ({allCards}) => {
         </SwitchWrapper>
       </Header>
       <CardsWrapper>
-        {allCards.map((card) => (
+        {allHouses.map((card) => (
           <Card card={card} />
         ))}
       </CardsWrapper>
