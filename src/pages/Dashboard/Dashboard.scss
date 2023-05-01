@@ -1,4 +1,11 @@
-.dashboard-content-block{
-    margin-left: 573px;
-    margin-top: 0;
+.dashboard-page {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.dashboard-content-block {
+  order: 1;
+  flex-grow: 1;
+  padding: 20px;
 }
