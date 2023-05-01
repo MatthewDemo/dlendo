@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProjectDetailsSubbarItems.scss";
+import "./DashboardSubbarItems.scss";
 import ProjectDetailsIcon from "../../../assets/img/project-details-subbar/project-details-subbar-header-icon.svg";
 import CalculatorIcon from "../../../assets/img/project-details-subbar/project-details-subbar-calculator-icon.svg";
 import ProjectMilestonesIcon from "../../../assets/img/project-details-subbar/project-details-subbar-milestones-icon.svg";
@@ -15,9 +15,9 @@ import MarketOverviewIcon from "../../../assets/img/project-details-subbar/proje
 import DlendoRatingIcon from "../../../assets/img/project-details-subbar/project-details-subbar-dlendo-rating-icon.svg";
 import LocationIcon from "../../../assets/img/project-details-subbar/project-details-subbar-location-icon.svg";
 
-const ProjectDetailsSubbarItems = () => {
+const DashboardSubbarItems = () => {
   return (
-    <ul className="project-details-subbar-items">
+    <ul className="dashboard-subbar-items">
       <li>
         <img src={ProjectDetailsIcon} alt="" />{" "}
         <span className="subbar-text">Project details</span>
@@ -78,4 +78,4 @@ const ProjectDetailsSubbarItems = () => {
   );
 };
 
-export default ProjectDetailsSubbarItems;
+export default DashboardSubbarItems;

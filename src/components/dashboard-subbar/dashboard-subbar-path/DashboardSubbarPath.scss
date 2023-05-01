@@ -1,4 +1,4 @@
-.project-details-subbar-path {
+.dashboard-subbar-path {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -23,7 +23,7 @@
     color: #8186af;
   }
 }
-.project-details-subbar-path::after {
+.dashboard-subbar-path::after {
     content: "";
     position: absolute;
     bottom: 0;

@@ -1,10 +1,10 @@
 import React from 'react'
-import './ProjectDetailsSubbarPath.scss'
+import './DashboardSubbarPath.scss'
 import PathIcon from '../../../assets/img/project-details-subbar/subbar-path-icon.svg'
 
-const ProjectDetailsSubbarPath = () => {
+const DashboardSubbarPath = () => {
   return (
-    <div className='project-details-subbar-path'>
+    <div className='dashboard-subbar-path'>
       <span>Dashboard</span>
       <img src={PathIcon} alt="" />
       <span>Project details</span>
@@ -12,4 +12,4 @@ const ProjectDetailsSubbarPath = () => {
   )
 }
 
-export default ProjectDetailsSubbarPath
+export default DashboardSubbarPath
