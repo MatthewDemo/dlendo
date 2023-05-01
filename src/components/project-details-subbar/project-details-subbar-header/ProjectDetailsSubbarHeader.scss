@@ -1,0 +1,25 @@
+.project-details-subbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 50px;
+    background: #191B3F;
+    border-bottom: 1px solid #323054;
+  }
+  
+  .project-details-subbar-header img {
+    width: 20px;
+    height: 20px;
+    margin-left: 60px;
+    margin-right: 15px;
+  }
+  
+  .project-details-subbar-header-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+  }
+  
