@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "./MapApiView.scss";
 import { GoogleMap, useLoadScript, Marker, InfoWindow } from "@react-google-maps/api";
 import { useSelector } from "react-redux";
-import PopupHouseInfo from '../../map/mapView/popup-house-info/PopupHouseInfo'
+import PopupHouseInfo from './popup-house-info/PopupHouseInfo'
 
 const MapApiView = () => {
   const allHouses = useSelector((state) => state.house.allHouses);
