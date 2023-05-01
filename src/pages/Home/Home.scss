@@ -2,3 +2,8 @@ body {
   background-color: #090b32;
   margin: 0;
 }
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}

@@ -3,7 +3,7 @@ import "./Map.scss";
 import MapHeader from "./mapHeader/MapHeader";
 import MapApiView from "./mapAipView/MapApiView";
 
-const Map = ({ allCards }) => {
+const Map = () => {
   return (
     <div>
       <MapHeader />
