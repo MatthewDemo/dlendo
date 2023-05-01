@@ -1,0 +1,69 @@
+.all-projects-footer-wrapper {
+  display: flex;
+  position: relative;
+}
+
+.footer-load-more-button {
+  width: 235px;
+  height: 36px;
+  background: #1e2044;
+  border: 1px solid #323054;
+  color: #fa544d;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 400px;
+}
+
+.all-projects-pagination-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  margin-top: 40px;
+  right: 40px;
+}
+
+.left-button {
+  margin-right: 10px;
+}
+
+.right-button {
+  margin-left: 5px;
+}
+
+.left-arrow,
+.right-arrow {
+  width: 24px;
+  height: 24px;
+  background-color: #1e2044;
+  border: 1px solid #323054;
+  border-radius: 25px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.pages {
+  display: flex;
+}
+
+.page {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  background-color: #1e2044;
+  border: 1px solid #323054;
+  color: #8186af;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 5px;
+  cursor: pointer;
+}

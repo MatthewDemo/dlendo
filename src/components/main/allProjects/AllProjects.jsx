@@ -3,6 +3,7 @@ import "./AllProjects.scss";
 import Filter from "./filter/Filter";
 import Sort from "./sort/Sort";
 import AllProjectsCards from "./allProjectsCards/AllProjectsCards";
+import AllProjectsFooter from "./allProjectsFooter/AllProjectsFooter";
 
 const AllProjects = () => {
   return (
@@ -16,6 +17,7 @@ const AllProjects = () => {
         </div>
       </div>
       <AllProjectsCards />
+      <AllProjectsFooter />
     </div>
   );
 };
