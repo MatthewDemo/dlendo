@@ -4,8 +4,25 @@
   height: 100vh;
 }
 
+.dashboard-item-title {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8186af;
+  position: absolute;
+  top: -50px;
+}
+
 .dashboard-content-block {
   order: 1;
   flex-grow: 1;
   padding: 20px;
+}
+
+.calculator-milestones-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 520px;
 }
