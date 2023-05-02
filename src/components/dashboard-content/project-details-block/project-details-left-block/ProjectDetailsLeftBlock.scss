@@ -1,0 +1,175 @@
+.dashboard-project-details-left-container {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .house-info-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .dashboard-project-details-buttons {
+      position: relative;
+  
+      .dashboard-project-details-left-button {
+        height: 30px;
+        width: 28px;
+        position: absolute;
+        top: 150px;
+        left: -195px;
+        transform: translateY(-50%);
+        border-radius: 0 50px 50px 0;
+        background: rgba(21, 23, 60, 0.4);
+        border: 1px solid rgba(38, 38, 74, 0.4);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .dashboard-project-details-right-button {
+        height: 30px;
+        width: 28px;
+        position: absolute;
+        top: 150px;
+        right: -195px;
+        transform: translateY(-50%);
+        border-radius: 50px 0 0 50px;
+        z-index: 2;
+        background: rgba(21, 23, 60, 0.4);
+        border: 1px solid rgba(38, 38, 74, 0.4);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  
+    .house-image {
+      width: 152%;
+      max-width: 388px;
+      height: auto;
+      max-height: 300px;
+      object-fit: contain;
+    }
+  
+    .house-buttons-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: absolute;
+      left: -65px;
+    }
+  
+    .house-buttons-row {
+      display: flex;
+      margin-top: 10px;
+      position: relative;
+      width: 250px;
+    }
+  
+    .house-button {
+      width: 6px;
+      height: 6px;
+      margin-right: 5px;
+      border-radius: 20px;
+      background-color: #1e2044;
+      border: 1px solid #323054;
+      cursor: pointer;
+    }
+  
+    .house-button.active {
+      width: 9px;
+      height: 9px;
+      border-radius: 20px;
+      background-color: #fa544d;
+      border: 1px solid #323054;
+    }
+  
+    .house-info-buttons-container {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: -75px;
+    }
+  
+    .house-info-button {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+    .house-info-button:hover {
+      transform: scale(1.5);
+    }
+  
+    .house-info-button img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  
+    .dashboard-project-details-adress-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: 40px;
+  
+      span {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #ffffff;
+      }
+  
+      .instant-interest {
+        position: relative;
+        width: 111px;
+        height: 21px;
+        background: #1e2044;
+        border: 1px solid #323054;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        p {
+          margin-left: 5px;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 12px;
+          color: #fa544d;
+        }
+  
+        .instant-interest-button {
+          background-color: #15173c;
+          border: none;
+          border-left: 1px solid #323054;
+          border-radius: 0 5px 5px 0;
+          cursor: pointer;
+          position: absolute;
+          height: 21px;
+          width: 22px;
+          right: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  
+          img {
+            height: 15px;
+            width: 15px;
+          }
+        }
+      }
+    }
+  }

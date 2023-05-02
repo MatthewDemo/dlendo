@@ -1,0 +1,143 @@
+.dashboard-project-details-right-container {
+  width: 45%;
+  margin-left: 20px;
+
+  .rating-container {
+    position: relative;
+    .project-mark {
+      color: #ffffff;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      background: #fa544d;
+      border: 1px solid #323054;
+      border-radius: 50px;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .project-star-container {
+      position: absolute;
+      width: 140px;
+      height: 28px;
+      background: #080a31;
+      border: 1px solid #323054;
+      border-radius: 20px;
+      top: 6px;
+
+      .five-stars-container {
+        display: flex;
+        margin-left: 43px;
+        margin-top: 7px;
+        img {
+          margin-left: 2px;
+        }
+      }
+
+      .letter-mark {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #06be30;
+        position: absolute;
+        right: 8px;
+        top: 0;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        border-left: 1px solid #323054;
+      }
+    }
+  }
+
+  .project-details-buttons-wrapper {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    gap: 10px;
+    margin-top: 5px;
+  }
+
+  .project-details-progressbar-container {
+    margin-top: 60px;
+  }
+
+  .project-details-return-term-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-details-location-distribution-container {
+    border-top: 1px solid rgba(50, 48, 84, 1);
+    border-bottom: 1px solid rgba(50, 48, 84, 1);
+    width: 100%;
+    max-width: 310px;
+    margin-top: 15px;
+
+    .nonowrap {
+      white-space: nowrap;
+    }
+
+    tbody {
+      tr {
+        vertical-align: auto;
+      }
+    }
+
+    p {
+      padding: 8px 0;
+      text-align: right;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 0em;
+      margin: 0;
+      color: #ffffff;
+    }
+    img {
+      width: 13px;
+      height: 13px;
+      margin-right: 8px;
+      margin-top: 5px;
+    }
+  }
+
+  .project-details-botton-buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .call-back-button,
+    .invest-button {
+      width: 157px;
+      height: 37px;
+      background: #13153a;
+      border: 1px solid #323054;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #ffffff;
+      text-align: center;
+      margin-right: 22px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .call-back-button:hover,
+    .invest-button:hover {
+      background: #fa544d;
+      color: #ffffff;
+    }
+  }
+}
