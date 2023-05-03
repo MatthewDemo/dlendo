@@ -1,40 +1,41 @@
 import React, { useState } from "react";
 import "./Calculator.scss";
 import CalculatorLines from "../../../assets/img/dashboard-icons/calculator icons/calculator-lines.svg";
+import InputRange from "./input-range/InputRange";
+import CalculatorHeader from "./calculator-header/CalculatorHeader";
+import CalculatorOptions from "./calculator-options/CalculatorOptions";
 
 const Calculator = () => {
   const [currentAmount, setCurrentAmount] = useState(0);
   const [maxAmount, setMaxAmount] = useState(100000);
+  const [dlendoInstantInterest, setDlendoInstantInterest] = useState(0);
+  const [interest, setInterest] = useState(8);
 
-  const handleSliderChange = (e) => {
-    setCurrentAmount(e.target.value);
-  };
 
   return (
     <div className="dashboard-calculator">
       <span className="dashboard-item-title">Calculator</span>
-      <div className="calculator-percentage">
-        <div className="zero-percent">
-          <span>0%</span>
-        </div>
-        <div className="calculator-current-amount">€{currentAmount}</div>
-        <div className="hundred-percent">
-          <span>€{maxAmount}</span>
-        </div>
-      </div>
-      <div className="calculator-input-range">
-        <input
-          type="range"
-          min="0"
-          max={maxAmount}
-          value={currentAmount}
-          onChange={handleSliderChange}
-          style={{ "--slider-value": currentAmount, "--slider-max": maxAmount }}
-        />
-      </div>
+      <CalculatorHeader currentAmount={currentAmount} maxAmount={maxAmount} />
+      <InputRange
+        currentAmount={currentAmount}
+        maxAmount={maxAmount}
+        setCurrentAmount={setCurrentAmount}
+      />
       <div className="calculator-lines">
         <img src={CalculatorLines} alt="" />
       </div>
+      <CalculatorOptions
+        interest={interest}
+        dlendoInstantInterest={dlendoInstantInterest}
+      />
+      <button
+        className="calculate-button"
+        onClick={() =>
+          setDlendoInstantInterest(currentAmount * interest * 0.01)
+        }
+      >
+        Calculate
+      </button>
     </div>
   );
 };
