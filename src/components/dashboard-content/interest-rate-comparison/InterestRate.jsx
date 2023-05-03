@@ -1,6 +1,8 @@
 import React from "react";
 import "./InterestRate.scss";
 import DlendoRate from "./dlendo-rate-container/DlendoRate";
+import LoanAmount from "./loan-amount-container/LoanAmount";
+import ComparisonTable from "./comparison-table/ComparisonTable";
 
 const InterestRate = () => {
   return (
@@ -9,13 +11,8 @@ const InterestRate = () => {
         Interest rate comparison
       </span>
       <DlendoRate />
-      <div className="loan-amount-container">
-        <span>Loan amount</span>
-        <div className="loan-amount-input-container">
-            <span>€</span>
-            <input type="text" placeholder="0.00"/>
-        </div>
-      </div>
+      <LoanAmount />
+      <ComparisonTable />
     </div>
   );
 };
