@@ -1,8 +1,94 @@
 .dashboard-project-milestones {
-    flex-basis: 42%;
-    height: 424px;
-    background: #13153a;
-    border: 1px solid #323054;
-    margin-left: 20px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 424px;
+  background: #13153a;
+  border: 1px solid #323054;
+  margin-left: 20px;
+  position: relative;
+
+  ul {
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    margin-left: 25px;
+    li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      position: relative;
+      margin-bottom: 67px;
+
+      .milestones-number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        background: #1e2044;
+        border: 1px solid #323054;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #fa544d;
+      }
+      &.milestone-inactive {
+        .milestones-number {
+          color: rgba(61, 63, 94, 1);
+        }
+        .milestones-named-container {
+          p {
+            color: #3d3f5e;
+          }
+        }
+      }
+      .milestones-named-container {
+        display: flex;
+        align-items: center;
+        width: 220px;
+        height: 30px;
+        background: #1e2044;
+        border: 1px solid #323054;
+        border-radius: 8px;
+        margin-left: 21px;
+        .milestones-check-mark {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30px;
+          height: 30px;
+          background: #15173c;
+          border-right: 1px solid #323054;
+          border-radius: 8px 0 0 8px;
+        }
+        p {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #ffffff;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .milestone-active::after {
+      content: "";
+      position: absolute;
+      left: 40%;
+      bottom: -35px;
+      width: 47px;
+      height: 1px;
+      border-bottom: 1px dashed #323054;
+      transform: rotate(90deg);
+      transform-origin: center center;
+    }
   }
+}
