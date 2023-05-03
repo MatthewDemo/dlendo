@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ProjectDetailsBlock.scss";
 import ProjectDetailsLeftBlock from "./project-details-left-block/ProjectDetailsLeftBlock";
 import ProjectDetailsRightBlock from "./project-details-right-block/ProjectDetailsRightBlock";
 
-const ProjectDetailsBlock = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+const ProjectDetailsBlock = ({activeIndex, setActiveIndex}) => {
 
   return (
     <div className="project-details-block">
