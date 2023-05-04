@@ -1,0 +1,89 @@
+.project-costing-block {
+  position: relative;
+  height: auto;
+  width: 730px;
+  background-color: rgba(19, 21, 58, 1);
+  border: 1px solid rgba(50, 48, 84, 1);
+  padding: 20px;
+  margin-top: 70px;
+
+  .project-costing-block-title {
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8186af;
+    position: absolute;
+    left: 0;
+    top: -50px;
+  }
+
+  ul {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    li {
+      list-style: none;
+      height: 28px;
+      width: 670px;
+      background: #1e2044;
+      border: 1px solid #323054;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      .project-costing-name {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #8186af;
+      }
+
+      .project-costing-price {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .project-costing-total-investment {
+    display: flex;
+    position: absolute;
+    right: 30px;
+    margin-top: 10px;
+
+    .project-costing-total-investment-name {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      color: #ffffff;
+      margin-right: 20px;
+    }
+
+    .project-costing-total-investment-price {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: #43fcff;
+    }
+  }
+
+  .project-costing-secong-ul{
+    margin-top: 70px;
+  }
+}
