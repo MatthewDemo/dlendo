@@ -1,13 +1,13 @@
-.deal-highlights-block {
+.investment-case-block {
   position: relative;
-  height: autp;
+  height: auto;
   width: 730px;
   background-color: rgba(19, 21, 58, 1);
   border: 1px solid rgba(50, 48, 84, 1);
   padding: 20px;
   margin-top: 70px;
 
-  .deal-highlights-block-title {
+  .investment-case-block-title {
     font-family: "Kanit";
     font-style: normal;
     font-weight: 700;
@@ -19,9 +19,18 @@
     top: -50px;
   }
 
+  p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #8186af;
+  }
+
   ul {
     margin: 0;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 0;
   }
 
@@ -31,13 +40,13 @@
     margin-bottom: 20px;
   }
 
-  .deal-highlight-image {
+  .investment-case-image {
     width: 30px;
     height: 30px;
     margin-right: 10px;
   }
 
-  .deal-highlight-title {
+  .investment-case-title {
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
@@ -47,7 +56,7 @@
     margin-left: 10px;
     margin-top: 5px;
 
-    .deal-highlight-text {
+    .investment-case-text {
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 400;

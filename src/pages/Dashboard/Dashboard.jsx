@@ -10,6 +10,7 @@ import ProjectPresentation from "../../components/dashboard-content/project-pres
 import InterestRate from "../../components/dashboard-content/interest-rate-comparison/InterestRate";
 import DealHighlights from "../../components/dashboard-content/deal-highlights/DealHighlights";
 import Documents from "../../components/dashboard-content/documents/Documents";
+import InvestmentCase from "../../components/dashboard-content/investment-case/InvestmentCase";
 
 const Dashboard = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -29,6 +30,7 @@ const Dashboard = () => {
         <InterestRate />
         <DealHighlights />
         <Documents />
+        <InvestmentCase />
       </div>
     </div>
   );
