@@ -5,30 +5,17 @@ import ProgressBar from "../../../main/projects/Card/progressBar/ProgressBar";
 import HotButton from "../../../main/projects/Card/buttons/hot-button/HotButton";
 import NewButton from "../../../main/projects/Card/buttons/new-button/NewButton";
 import CompareButton from "../../../main/projects/Card/buttons/compare-button/CompareButton";
-import FilledStar from "../../../../assets/img/dashboard-icons/project-details-icons/filled-star-icon.svg";
-import UnfilledStar from "../../../../assets/img/dashboard-icons/project-details-icons/unfilled-star-icon.svg";
 import ReturnTermBlock from "../../../main/projects/Card/return-term-block/ReturnTermBlock";
 import LocationIcon from "../../../../assets/img/projects/location-icon.svg";
 import DistributionIcon from "../../../../assets/img/projects/distribution-icon.svg";
+import RatingComponent from "./rating-component/RatingComponent";
 
 const ProjectDetailsRightBlock = ({ activeIndex }) => {
   const allHouses = useSelector((state) => state.house.allHouses);
 
   return (
     <div className="dashboard-project-details-right-container">
-      <div className="rating-container">
-        <div className="project-mark">15</div>
-        <div className="project-star-container">
-          <div className="five-stars-container">
-            <img src={FilledStar} alt="" />
-            <img src={FilledStar} alt="" />
-            <img src={FilledStar} alt="" />
-            <img src={FilledStar} alt="" />
-            <img src={UnfilledStar} alt="" />
-          </div>
-          <div className="letter-mark">A</div>
-        </div>
-      </div>
+      <RatingComponent />
       <div className="project-details-buttons-wrapper">
         <HotButton />
         <NewButton />

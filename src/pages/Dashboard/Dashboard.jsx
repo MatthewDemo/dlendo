@@ -13,6 +13,7 @@ import Documents from "../../components/dashboard-content/documents/Documents";
 import InvestmentCase from "../../components/dashboard-content/investment-case/InvestmentCase";
 import ProjectCosting from "../../components/dashboard-content/project-costing/ProjectCosting";
 import FinanceStructure from "../../components/dashboard-content/finance-structure/FinanceStructure";
+import DlendoRating from "../../components/dashboard-content/dlendo-rating/DlendoRating";
 
 const Dashboard = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -35,6 +36,7 @@ const Dashboard = () => {
         <InvestmentCase />
         <ProjectCosting />
         <FinanceStructure />
+        <DlendoRating />
       </div>
     </div>
   );

@@ -1,0 +1,121 @@
+.dlendo-rating-header {
+  position: relative;
+  margin-top: 20px;
+  .rating-container {
+    position: relative;
+    .project-mark {
+      color: #ffffff;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      background: #fa544d;
+      border: 1px solid #323054;
+      border-radius: 50px;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .project-star-container {
+      position: absolute;
+      width: 140px;
+      height: 28px;
+      background: #080a31;
+      border: 1px solid #323054;
+      border-radius: 20px;
+      top: 6px;
+
+      .five-stars-container {
+        display: flex;
+        margin-left: 43px;
+        margin-top: 7px;
+        img {
+          margin-left: 2px;
+        }
+      }
+
+      .letter-mark {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #06be30;
+        position: absolute;
+        right: 8px;
+        top: 0;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        padding-left: 5px;
+        border-left: 1px solid #323054;
+      }
+    }
+  }
+
+  .marks-container {
+    position: absolute;
+    display: flex;
+    margin-left: 270px;
+    margin-top: 7px;
+
+    .dlendo-rating-mark {
+      height: 27px;
+      width: 82px;
+      background: #1e2044;
+      border: 1px solid #323054;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+
+      .dlendo-rating-mark-letter {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: 10px;
+      }
+
+      .dlendo-rating-mark-letter.e {
+        color: #fa544d;
+      }
+      .dlendo-rating-mark-letter.d {
+        color: #bea206;
+      }
+      .dlendo-rating-mark-letter.c {
+        color: #00e1ff;
+      }
+      .dlendo-rating-mark-letter.b {
+        color: #007fff;
+      }
+      .dlendo-rating-mark-letter.a {
+        color: #06be30;
+      }
+
+      .dlendo-rating-mark-value-container {
+        height: 100%;
+        border-left: 1px solid #323054;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+
+        span {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #8186af;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

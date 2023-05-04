@@ -1,0 +1,23 @@
+.dlendo-rating-block {
+  position: relative;
+  height: 320px;
+  width: 730px;
+  background-color: rgba(19, 21, 58, 1);
+  border: 1px solid rgba(50, 48, 84, 1);
+  padding: 20px;
+  margin-top: 70px;
+
+  .dlendo-rating-block-title {
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8186af;
+    position: absolute;
+    left: 0;
+    top: -50px;
+  }
+
+ 
+}
