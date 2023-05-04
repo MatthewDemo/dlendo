@@ -1,0 +1,104 @@
+.documents-block {
+  position: relative;
+  height: auto;
+  width: 730px;
+  background-color: rgba(19, 21, 58, 1);
+  border: 1px solid rgba(50, 48, 84, 1);
+  padding: 20px;
+  margin-top: 70px;
+
+  .documents-block-title {
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8186af;
+    position: absolute;
+    left: 0;
+    top: -50px;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: -30px;
+
+    .documents-table-header {
+      display: flex;
+      margin-left: 30px;
+      margin-right: 50px;
+
+      .documents-table-header-date {
+        width: 180px;
+      }
+      .documents-table-header-name {
+        width: 370px;
+      }
+      .documents-table-header-document {
+        margin-left: 10px;
+      }
+      span {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: #8186af;
+      }
+    }
+
+    .documents-table-row {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      padding-left: 30px;
+      padding-right: 30px;
+      height: 48px;
+      background: #1e2044;
+      border: 1px solid #323054;
+      border-radius: 5px;
+      margin-top: 10px;
+
+      .documents-table-row-date {
+        width: 180px;
+      }
+      .documents-table-row-name {
+        width: 370px;
+      }
+      span {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        text-align: left;
+      }
+
+      button {
+        height: 27px;
+        width: 117px;
+        background: #1e2044;
+        border: 1px solid #323054;
+        border-radius: 5px;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        cursor: pointer;
+
+        a{
+            text-decoration: none;
+            color: #ffffff;
+
+        }
+
+        &:hover {
+          border: 1px solid #fa544d;
+        }
+      }
+    }
+  }
+}
