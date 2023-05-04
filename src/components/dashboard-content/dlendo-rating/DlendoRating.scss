@@ -1,6 +1,6 @@
 .dlendo-rating-block {
   position: relative;
-  height: 320px;
+  height: 660px;
   width: 730px;
   background-color: rgba(19, 21, 58, 1);
   border: 1px solid rgba(50, 48, 84, 1);
@@ -19,5 +19,23 @@
     top: -50px;
   }
 
- 
+  p {
+    span {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: #fa544d;
+    }
+    position: absolute;
+    bottom: 0;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #8186af;
+    margin: 15px;
+  }
 }
