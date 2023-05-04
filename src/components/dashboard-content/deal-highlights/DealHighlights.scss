@@ -1,0 +1,60 @@
+.deal-highlights-block {
+  position: relative;
+  height: 329px;
+  width: 730px;
+  background-color: rgba(19, 21, 58, 1);
+  border: 1px solid rgba(50, 48, 84, 1);
+  padding: 20px;
+  margin-top: 70px;
+
+  .deal-highlights-block-title {
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8186af;
+    position: absolute;
+    left: 0;
+    top: -50px;
+  }
+
+  ul {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .deal-highlight-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .deal-highlight-title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fa544d;
+    margin-left: 10px;
+    margin-top: 5px;
+
+    .deal-highlight-text {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #8186af;
+      margin: 5px 0 0 0;
+    }
+  }
+}
