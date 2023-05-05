@@ -1,36 +1,36 @@
 .map-header {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 20px;
   margin-top: 32px;
+
+  .header-title {
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8186af;
+    width: 200px;
+    white-space: nowrap;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 600px;
+    white-space: nowrap;
+
+    p {
+      margin-right: 10px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      color: #ffffff;
+      white-space: nowrap;
+    }
+  }
 }
-
-.header-title {
-  font-family: "Kanit";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  color: #8186af;
-}
-
-.search-container {
-  display: flex;
-  align-items: center;
-}
-
-.search-container p {
-  margin-right: 10px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  color: #ffffff;
-}
-
-
-
-
-  
