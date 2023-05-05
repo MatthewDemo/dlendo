@@ -1,23 +1,24 @@
 import React, { useState } from "react";
+import './Projects.scss'
 import LeftArrow from "../../../assets/img/main-header-icons/left-arrow.svg";
 import RightArrow from "../../../assets/img/main-header-icons/right-arrow.svg";
 import Card from "./Card/Card";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
 
-const Header = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  background-color: #090b32;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 0 30px;
-`;
+// const Header = styled.header`
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   height: 80px;
+//   background-color: #090b32;
+//   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+//   padding: 0 30px;
+// `;
 
-const ButtonsWrapper = styled.div`
-  display: flex;
-`;
+// const ButtonsWrapper = styled.div`
+//   display: flex;
+// `;
 
 const Button = styled.button`
   border: none;
@@ -42,28 +43,28 @@ const Button = styled.button`
   }
 `;
 
-const SwitchWrapper = styled.div`
-  display: flex;
-  align-items: center;
-`;
+// const SwitchWrapper = styled.div`
+//   display: flex;
+//   align-items: center;
+// `;
 
-const SwitchButton = styled.button`
-  border: none;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  background-color: #1e2044;
-  border: 1px solid #323054;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 29.9px;
-  color: #fa544d;
-  margin: 0 10px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+// const SwitchButton = styled.button`
+//   border: none;
+//   border-radius: 50%;
+//   width: 24px;
+//   height: 24px;
+//   background-color: #1e2044;
+//   border: 1px solid #323054;
+//   font-size: 12px;
+//   font-weight: 700;
+//   line-height: 29.9px;
+//   color: #fa544d;
+//   margin: 0 10px;
+//   cursor: pointer;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// `;
 
 const PageNumber = styled.div`
   font-family: "Inter", sans-serif;
@@ -102,8 +103,8 @@ const Projects = () => {
 
   return (
     <div>
-      <Header>
-        <ButtonsWrapper>
+      <div className="main-page-projects-header">
+        <div className="main-page-projects-buttons-wrapper"> 
           <Button
             active={activeButton === "new"}
             onClick={() => handleButtonClick("new")}
@@ -116,19 +117,19 @@ const Projects = () => {
           >
             Hot projects
           </Button>
-        </ButtonsWrapper>
-        <SwitchWrapper>
-          <SwitchButton onClick={() => handleSwitchButtonClick("left")}>
+        </div>
+        <div className="main-page-projects-switch-wrapper">
+          <button className="main-page-projects-switch-button" onClick={() => handleSwitchButtonClick("left")}>
             <img src={LeftArrow} alt="" />
-          </SwitchButton>
+          </button>
           <PageNumber>
             {currentPage}/{Math.ceil(allHouses.length / cardsPerPage)}
           </PageNumber>
-          <SwitchButton onClick={() => handleSwitchButtonClick("right")}>
+          <button className="main-page-projects-switch-button" onClick={() => handleSwitchButtonClick("right")}>
             <img src={RightArrow} alt="" />
-          </SwitchButton>
-        </SwitchWrapper>
-      </Header>
+          </button>
+        </div>
+      </div>
       <CardsWrapper>
         {currentCards.map((card) => (
           <Card card={card} />
