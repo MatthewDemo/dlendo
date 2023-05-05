@@ -8,7 +8,7 @@ import factSheetFile from '../../../assets/documents/Fact-sheet.docx';
 const Documents = () => {
   return (
     <div className="documents-block">
-      <span className="documents-block-title">Documents</span>
+      <span className="documents-block-title" id="documents-block">Documents</span>
       <ul>
         <li className="documents-table-header">
           <span className="documents-table-header-date">Date</span>

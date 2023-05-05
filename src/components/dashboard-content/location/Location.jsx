@@ -12,8 +12,8 @@ const Location = ({ activeIndex }) => {
   if (!isLoaded) return <div> Map</div>;
 
   return (
-    <div className="location-block">
-      <span className="location-block-title">Location</span>
+    <div className="location-block" >
+      <span className="location-block-title" id="location-block">Location</span>
       <LocationMap activeIndex={activeIndex} />
       <p className="location-description">
         The 22nd district, also called 'Donaustadt', is located east of the city

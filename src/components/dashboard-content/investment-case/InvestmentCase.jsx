@@ -5,7 +5,7 @@ import HighlightArrow from "../../../assets/img/dashboard-icons/deal-highlight-i
 const InvestmentCase = () => {
   return (
     <div className="investment-case-block">
-      <span className="investment-case-block-title">Investment case</span>
+      <span className="investment-case-block-title" id="investment-case-block">Investment case</span>
       <p>
         For the purpose of partial financing, IME GmbH intends to take up
         qualified subordinated loans of a maximum of € 1,000,000.

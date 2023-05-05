@@ -5,7 +5,7 @@ import ChartCircle from "../../../assets/img/dashboard-icons/finance-structure/c
 const FinanceStructure = () => {
   return (
     <div className="finance-structure-block">
-      <span className="finance-structure-block-title">Finance structure</span>
+      <span className="finance-structure-block-title" id="finance-structure-block">Finance structure</span>
       <div className="finance-structure-left-container">
         <ul>
           <li>

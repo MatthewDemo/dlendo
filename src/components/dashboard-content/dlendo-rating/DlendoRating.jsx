@@ -5,8 +5,8 @@ import DlendoRatingTable from "./dlendo-rating-table/DlendoRatingTable";
 
 const DlendoRating = () => {
   return (
-    <div className="dlendo-rating-block">
-      <span className="dlendo-rating-block-title">Dlendo rating</span>
+    <div className="dlendo-rating-block" >
+      <span className="dlendo-rating-block-title" id="dlendo-rating-block">Dlendo rating</span>
       <DlendoRatingHeader />
       <DlendoRatingTable />
       <p>

@@ -14,7 +14,7 @@ const Calculator = () => {
 
   return (
     <div className="dashboard-calculator">
-      <span className="dashboard-item-title">Calculator</span>
+      <span className="dashboard-item-title" id="calculator-block">Calculator</span>
       <CalculatorHeader currentAmount={currentAmount} maxAmount={maxAmount} />
       <InputRange
         currentAmount={currentAmount}

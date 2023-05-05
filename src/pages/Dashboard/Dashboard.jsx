@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Dashboard.scss";
 import Navbar from "../../components/navbar/Navbar";
 import DashboardSubbar from "../../components/dashboard-subbar/DashboardSubbar";
@@ -24,12 +24,21 @@ const Dashboard = () => {
       <Navbar />
       <DashboardSubbar />
       <div className="dashboard-content-block">
-        <ProjectDetailsBlock activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>
+        <ProjectDetailsBlock
+          activeIndex={activeIndex}
+          setActiveIndex={setActiveIndex}
+        />
         <div className="calculator-milestones-container">
-            <Calculator activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>
-            <ProjectMilestones />
+          <Calculator
+            activeIndex={activeIndex}
+            setActiveIndex={setActiveIndex}
+          />
+          <ProjectMilestones />
         </div>
-        <ProjectNews activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>
+        <ProjectNews
+          activeIndex={activeIndex}
+          setActiveIndex={setActiveIndex}
+        />
         <ProjectPresentation />
         <InterestRate />
         <DealHighlights />
@@ -38,7 +47,7 @@ const Dashboard = () => {
         <ProjectCosting />
         <FinanceStructure />
         <DlendoRating />
-        <Location activeIndex={activeIndex}/>
+        <Location activeIndex={activeIndex} />
       </div>
     </div>
   );

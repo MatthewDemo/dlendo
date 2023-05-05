@@ -7,7 +7,7 @@ import ComparisonTable from "./comparison-table/ComparisonTable";
 const InterestRate = () => {
   return (
     <div className="interest-rate-comparison-block">
-      <span className="interest-rate-block-title">
+      <span className="interest-rate-block-title" id="interest-rate-comparison-block">
         Interest rate comparison
       </span>
       <DlendoRate />

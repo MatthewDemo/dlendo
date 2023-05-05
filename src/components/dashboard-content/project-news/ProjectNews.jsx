@@ -7,7 +7,7 @@ const ProjectNews = ({ activeIndex, setActiveIndex }) => {
 
   return (
     <div className="project-news-block">
-      <span className="project-news-block-title">Project news</span>
+      <span className="project-news-block-title" id="project-news-block">Project news</span>
       <div className="project-news-block-container">
         <div className="project-news-block-item">
           <img src={allHouses[activeIndex].photos[0]} alt="" />

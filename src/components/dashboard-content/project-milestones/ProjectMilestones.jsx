@@ -6,7 +6,7 @@ import CheckMarkGreyIcon from "../../../assets/img/dashboard-icons/milestones-ic
 const ProjectMilestones = () => {
   return (
     <div className="dashboard-project-milestones">
-      <span className="dashboard-item-title">Project milestones</span>
+      <span className="dashboard-item-title" id="project-milestones-block">Project milestones</span>
       <ul>
         <li className="milestone-active">
           <div className="milestones-number">1</div>

@@ -5,7 +5,7 @@ import HighlightArrow from "../../../assets/img/dashboard-icons/deal-highlight-i
 const DealHighlights = () => {
   return (
     <div className="deal-highlights-block">
-      <span className="deal-highlights-block-title">Deal highlights</span>
+      <span className="deal-highlights-block-title" id="deal-highlights-block">Deal highlights</span>
       <ul>
         <li>
           <img src={HighlightArrow} alt="" className="deal-highlight-image" />

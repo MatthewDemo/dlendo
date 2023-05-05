@@ -6,7 +6,7 @@ import ProjectDetailsRightBlock from "./project-details-right-block/ProjectDetai
 const ProjectDetailsBlock = ({activeIndex, setActiveIndex}) => {
 
   return (
-    <div className="project-details-block">
+    <div className="project-details-block" id="project-details-block">
       <ProjectDetailsLeftBlock
         activeIndex={activeIndex}
         setActiveIndex={setActiveIndex}

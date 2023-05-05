@@ -4,7 +4,7 @@ import "./ProjectPresentation.scss";
 const ProjectPresentation = () => {
   return (
     <div className="project-presentation-block">
-      <span className="project-presentation-block-title">
+      <span className="project-presentation-block-title" id="project-presentation-block">
         Project presentation
       </span>
       <p>

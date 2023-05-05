@@ -4,7 +4,7 @@ import "./ProjectCosting.scss";
 const ProjectCosting = () => {
   return (
     <div className="project-costing-block">
-      <span className="project-costing-block-title">Project costing</span>
+      <span className="project-costing-block-title" id="project-costing-block">Project costing</span>
       <ul>
         <li>
           <span className="project-costing-name">Cost of acquisition</span>
