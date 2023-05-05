@@ -1,0 +1,50 @@
+.dashboard-related-projects-header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 585px;
+  background-color: #090b32;
+  margin-top: 80px;
+  padding-left: 10px;
+
+  .related-projects-title {
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fa544d;
+    white-space: nowrap;
+  }
+
+  .dashboard-related-projects-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 495px;
+
+    .dashboard-related-projects-switch-button {
+      border: none;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      background-color: #1e2044;
+      border: 1px solid #323054;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 29.9px;
+      color: #fa544d;
+      margin: 0 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.related-projects-cards-wrapper {
+  display: flex;
+  margin-left: -10px;
+  margin-top: -30px;
+  width: 110%;
+}

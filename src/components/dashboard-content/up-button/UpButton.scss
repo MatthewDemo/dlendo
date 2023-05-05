@@ -1,0 +1,20 @@
+.upButton {
+  position: fixed;
+  left: 1250px;
+  bottom: 20px;
+  background: #1e2044;
+  border: 1px solid #323054;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+  &:hover {
+    opacity: 1;
+  }
+}

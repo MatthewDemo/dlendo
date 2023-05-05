@@ -6,20 +6,6 @@ import Card from "./Card/Card";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
 
-// const Header = styled.header`
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   height: 80px;
-//   background-color: #090b32;
-//   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-//   padding: 0 30px;
-// `;
-
-// const ButtonsWrapper = styled.div`
-//   display: flex;
-// `;
-
 const Button = styled.button`
   border: none;
   background-color: transparent;
@@ -42,29 +28,6 @@ const Button = styled.button`
     background-color: #fa544d;
   }
 `;
-
-// const SwitchWrapper = styled.div`
-//   display: flex;
-//   align-items: center;
-// `;
-
-// const SwitchButton = styled.button`
-//   border: none;
-//   border-radius: 50%;
-//   width: 24px;
-//   height: 24px;
-//   background-color: #1e2044;
-//   border: 1px solid #323054;
-//   font-size: 12px;
-//   font-weight: 700;
-//   line-height: 29.9px;
-//   color: #fa544d;
-//   margin: 0 10px;
-//   cursor: pointer;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// `;
 
 const PageNumber = styled.div`
   font-family: "Inter", sans-serif;

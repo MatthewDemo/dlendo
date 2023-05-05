@@ -15,6 +15,9 @@ import ProjectCosting from "../../components/dashboard-content/project-costing/P
 import FinanceStructure from "../../components/dashboard-content/finance-structure/FinanceStructure";
 import DlendoRating from "../../components/dashboard-content/dlendo-rating/DlendoRating";
 import Location from "../../components/dashboard-content/location/Location";
+import ReturnToDashboardButton from "../../components/dashboard-content/return-to-dashboard-button/ReturnToDashboardButton";
+import UpButton from "../../components/dashboard-content/up-button/UpButton";
+import RelatedProjects from "../../components/dashboard-content/related-projects/RelatedProjects";
 
 const Dashboard = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -23,7 +26,7 @@ const Dashboard = () => {
     <div className="dashboard-page">
       <Navbar />
       <DashboardSubbar />
-      <div className="dashboard-content-block">
+      <div className="dashboard-content-block" id="dashboard-content-block">
         <ProjectDetailsBlock
           activeIndex={activeIndex}
           setActiveIndex={setActiveIndex}
@@ -48,6 +51,9 @@ const Dashboard = () => {
         <FinanceStructure />
         <DlendoRating />
         <Location activeIndex={activeIndex} />
+        <ReturnToDashboardButton />
+        <UpButton />
+      <RelatedProjects />
       </div>
     </div>
   );
