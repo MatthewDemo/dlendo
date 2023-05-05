@@ -4,7 +4,7 @@ import "./DlendoRatingTable.scss";
 const DlendoRatingTable = () => {
   const locationPoints = 1;
   const vacancyPoints = 3;
-  const developmentStagePoints = 3;
+  const developmentStagePoints = 2;
   const trackRecordPoints = 2;
   const assetTypePoints = 0;
   const durationPoints = 1;
@@ -228,7 +228,6 @@ const DlendoRatingTable = () => {
           <span className="scale-points">{preSalesPoints}</span>
         </div>
       </li>
-
       <li className="dlendo-rating-table-footer">
         <span>Total:</span>
         <span>{sum}</span>

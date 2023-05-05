@@ -14,6 +14,7 @@ import InvestmentCase from "../../components/dashboard-content/investment-case/I
 import ProjectCosting from "../../components/dashboard-content/project-costing/ProjectCosting";
 import FinanceStructure from "../../components/dashboard-content/finance-structure/FinanceStructure";
 import DlendoRating from "../../components/dashboard-content/dlendo-rating/DlendoRating";
+import Location from "../../components/dashboard-content/location/Location";
 
 const Dashboard = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -37,6 +38,7 @@ const Dashboard = () => {
         <ProjectCosting />
         <FinanceStructure />
         <DlendoRating />
+        <Location activeIndex={activeIndex}/>
       </div>
     </div>
   );

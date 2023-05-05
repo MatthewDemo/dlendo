@@ -9,6 +9,7 @@ import {
 import { useSelector } from "react-redux";
 import PopupHouseInfo from "./popup-house-info/PopupHouseInfo";
 
+
 const center = { lat: 52.51631741228133, lng: 16.669496673372823 };
 const MapApiView = () => {
   const allHouses = useSelector((state) => state.house.allHouses);
