@@ -6,9 +6,9 @@ import NavbarHomepage from "./navbarHomepage/NavbarHomepage";
 import NavbarSupport from "./navbarSupport/NavbarSupport";
 import "./Navbar.scss";
 
-const Navbar = () => {
+const Navbar = ({height}) => {
   return (
-    <div className="navbar">
+    <div className="navbar" style={{height: height}}>
       <NavbarLogo />
       <NavbarUserInfo />
       <NavbarUserPanel />

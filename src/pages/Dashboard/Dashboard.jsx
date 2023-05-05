@@ -24,7 +24,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-page">
-      <Navbar />
+      <Navbar height='7550px'/>
       <DashboardSubbar />
       <div className="dashboard-content-block" id="dashboard-content-block">
         <ProjectDetailsBlock
