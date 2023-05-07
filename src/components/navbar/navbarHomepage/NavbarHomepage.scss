@@ -12,6 +12,31 @@
 
   ul {
     margin-left: -20px;
+
+    .navbar-homepage-dlendo {
+      background-image: url("../../../assets/img/homepage-icons/dlendo-homepage-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 32px center;
+      &:hover {
+        background-image: url("../../../assets/img/homepage-icons/hovered-dlendo-icon.svg");
+        background-repeat: no-repeat;
+        background-position: 32px center;
+      }
+    }
+
+    .navbar-homepage-faq {
+      background-image: url("../../../assets/img/homepage-icons/question-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 35px center;
+      span {
+        margin-left: 46px;
+      }
+      &:hover {
+        background-image: url("../../../assets/img/homepage-icons/hovered-question-icon.svg");
+        background-repeat: no-repeat;
+        background-position: 35px center;
+      }
+    }
     li {
       width: 235px;
       height: 38px;
@@ -36,6 +61,7 @@
         border: 1px solid #ffffff;
         span {
           color: #ffffff;
+          font-weight: 700;
         }
       }
 
@@ -49,7 +75,7 @@
         font-size: 14px;
         line-height: 17.07px;
         font-family: "Montserrat", sans-serif;
-        margin-left: 34px;
+        margin-left: 55px;
       }
     }
   }
