@@ -12,6 +12,73 @@
 
   ul {
     margin-left: -20px;
+
+    .user-panel-dashboard {
+      background-image: url("../../../assets/img/user-panel-icons/dashboard-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 30px center;
+      &:hover {
+        background-image: url("../../../assets/img/user-panel-icons/hovered-dashboard-icon.svg");
+        background-repeat: no-repeat;
+        background-position: 30px center;
+      }
+    }
+
+    .user-panel-dlendo-portfolio {
+      background-image: url("../../../assets/img/user-panel-icons/dlendo-portfolio-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 30px center;
+      &:hover {
+        background-image: url("../../../assets/img/user-panel-icons/hovered-dlendo-portfolio-icon.svg");
+        background-repeat: no-repeat;
+        background-position: 30px center;
+      }
+    }
+
+    .user-panel-my-portfolio {
+      background-image: url("../../../assets/img/user-panel-icons/my-portfolio-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 30px center;
+      &:hover {
+        background-image: url("../../../assets/img/user-panel-icons/hovered-my-portfolio-icon.svg");
+        background-repeat: no-repeat;
+        background-position: 30px center;
+      }
+    }
+
+    .user-panel-my-wallet {
+      background-image: url("../../../assets/img/user-panel-icons/my-wallet-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 30px center;
+      &:hover {
+        background-image: url("../../../assets/img/user-panel-icons/hovered-my-wallet-icon.svg");
+        background-repeat: no-repeat;
+        background-position: 30px center;
+      }
+    }
+
+    .user-panel-partnership {
+      background-image: url("../../../assets/img/user-panel-icons/partnership-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 30px center;
+      &:hover {
+        background-image: url("../../../assets/img/user-panel-icons/hovered-partnership-icon.svg");
+        background-repeat: no-repeat;
+        background-position: 30px center;
+      }
+    }
+
+    .user-panel-company-news {
+      background-image: url("../../../assets/img/user-panel-icons/company-news-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 30px center;
+      &:hover {
+        background-image: url("../../../assets/img/user-panel-icons/hovered-company-news-icon.svg");
+        background-repeat: no-repeat;
+        background-position: 30px center;
+      }
+    }
+
     li {
       width: 235px;
       height: 38px;
@@ -27,9 +94,9 @@
         border: 1px solid #ffffff;
         span {
           color: #ffffff;
+          font-weight: 700;
         }
       }
-
 
       img {
         margin-left: 30px;
@@ -42,7 +109,7 @@
         line-height: 17.07px;
         font-style: normal;
         font-family: "Montserrat", sans-serif;
-        margin-left: 34px;
+        margin-left: 54px;
       }
     }
   }

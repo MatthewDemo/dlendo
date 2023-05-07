@@ -1,10 +1,4 @@
 import React from "react";
-import DashboardIcon from "../../../assets/img/user-panel-icons/dashboard-icon.svg";
-import DlendoPortfolioIcon from "../../../assets/img/user-panel-icons/dlendo-portfolio-icon.svg";
-import MyPortfolioIcon from "../../../assets/img/user-panel-icons/my-portfolio-icon.svg";
-import MyWalletIcon from "../../../assets/img/user-panel-icons/my-wallet-icon.svg";
-import PatrnershipIcon from "../../../assets/img/user-panel-icons/partnership-icon.svg";
-import CompanyNewsIcon from "../../../assets/img/user-panel-icons/company-news-icon.svg";
 import { Link } from "react-router-dom";
 import "./NavbarUserPanel.scss";
 
@@ -14,29 +8,29 @@ const NavbarUserPanel = () => {
       <p>USER PANEL</p>
       <ul>
         <Link to="/project-details" style={{ textDecoration: "none" }}>
-          <li>
-            <img src={DashboardIcon} alt="" />{" "}
+          <li className="user-panel-dashboard">
+            <img src="" alt="" />{" "}
             <span className="userpanel-text">Dashboard</span>
           </li>
         </Link>{" "}
-        <li>
-          <img src={DlendoPortfolioIcon} alt="" />{" "}
+        <li className="user-panel-dlendo-portfolio">
+          <img src="" alt="" />{" "}
           <span className="userpanel-text">Dlendo portfolio</span>
         </li>
-        <li>
-          <img src={MyPortfolioIcon} alt="" />{" "}
-          <span className="userpanel-text"></span>
+        <li className="user-panel-my-portfolio">
+          <img src="" alt="" />{" "}
+          <span className="userpanel-text">My portfolio</span>
         </li>
-        <li>
-          <img src={MyWalletIcon} alt="" />{" "}
+        <li className="user-panel-my-wallet">
+          <img src="" alt="" />{" "}
           <span className="userpanel-text">My wallet</span>
         </li>
-        <li>
-          <img src={PatrnershipIcon} alt="" />{" "}
+        <li className="user-panel-partnership">
+          <img src="" alt="" />{" "}
           <span className="userpanel-text">Partnership</span>
         </li>
-        <li>
-          <img src={CompanyNewsIcon} alt="" />{" "}
+        <li className="user-panel-company-news">
+          <img src="" alt="" />{" "}
           <span className="userpanel-text">Company news</span>
         </li>
       </ul>
