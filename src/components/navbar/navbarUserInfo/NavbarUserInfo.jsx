@@ -1,10 +1,10 @@
 import React from "react";
-import NavbarUserLogo from "../../../assets/navbar-user-logo.svg";
-import NavbarEllipseLogo from "../../../assets/navbar-ellipse-logo.svg";
-import BalanceIcon from "../../../assets/balance-icon.svg";
-import BalanceAddIcon from "../../../assets/balance-add-icon.svg";
-import FundedIcon from "../../../assets/funded-icon.svg";
-import PendingIcon from "../../../assets/pending-icon.svg";
+import NavbarUserLogo from "../../../assets/img/navbar-user-info-icons/navbar-user-logo.svg";
+import NavbarEllipseLogo from "../../../assets/img/navbar-user-info-icons/navbar-ellipse-logo.svg";
+import BalanceIcon from "../../../assets/img/navbar-user-info-icons/balance-icon.svg";
+import BalanceAddIcon from "../../../assets/img/navbar-user-info-icons/balance-add-icon.svg";
+import FundedIcon from "../../../assets/img/navbar-user-info-icons/funded-icon.svg";
+import PendingIcon from "../../../assets/img/navbar-user-info-icons/pending-icon.svg";
 import "./NavbarUserInfo.scss";
 
 const NavbarUserInfo = () => {
