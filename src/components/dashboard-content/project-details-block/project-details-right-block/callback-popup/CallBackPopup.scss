@@ -1,0 +1,41 @@
+.callback-popup-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .callback-popup-container {
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .callback-popup-container h2 {
+    margin-top: 0;
+  }
+  
+  .callback-popup-container p {
+    margin-bottom: 20px;
+  }
+  
+  .callback-popup-container button {
+    padding: 10px 20px;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
