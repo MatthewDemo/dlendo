@@ -11,6 +11,40 @@
   .navbar-button-container {
     position: absolute;
     margin-left: 120px;
+
+    .navbar-gear {
+      background-image: url("../../../assets/gear-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 6px center;
+      &:hover {
+        background-image: url("../../../assets/hovered-gear-icon.svg");
+        background-repeat: no-repeat;
+        background-position: 6px center;
+      }
+    }
+
+    .navbar-vesi {
+      background-image: url("../../../assets/vesi-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 4px center;
+      &:hover {
+        background-image: url("../../../assets/hovered-vesi-icon.svg");
+        background-repeat: no-repeat;
+        background-position: 4px center;
+      }
+    }
+
+    .navbar-bell {
+      background-image: url("../../../assets/bell-icon.svg");
+      background-repeat: no-repeat;
+      background-position: 6px center;
+      &:hover {
+        background-image: url("../../../assets/hovered-bell-icon.svg");
+        background-repeat: no-repeat;
+        background-position: 6px center;
+      }
+    }
+
     button {
       width: 30px;
       height: 31px;
@@ -21,7 +55,6 @@
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      
 
       &:hover {
         background-color: #fa544d;
@@ -86,7 +119,7 @@
       font-size: 12px;
       line-height: 15px;
       font-family: "Montserrat", sans-serif;
-      padding-right: 8px; 
+      padding-right: 8px;
     }
 
     .navbar-user-balance {
