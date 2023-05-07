@@ -1,8 +1,12 @@
 .subbar {
-    width: 285px;
-    height: 7550px;
-    background: #13153A;
-    border: 1px solid #323054;
-    border-bottom: none;
-    margin-left: 285px;
+  width: 285px;
+  height: 7550px;
+  background: #13153a;
+  border: 1px solid #323054;
+  border-bottom: none;
+  margin-left: 285px;
+
+  span {
+    white-space: nowrap;
   }
+}
