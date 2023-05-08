@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./Dashboard.scss";
 import Navbar from "../../components/navbar/Navbar";
 import DashboardSubbar from "../../components/dashboard-subbar/DashboardSubbar";

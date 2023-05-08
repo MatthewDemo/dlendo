@@ -10,6 +10,8 @@ import LocationIcon from "../../../../assets/img/projects/location-icon.svg";
 import DistributionIcon from "../../../../assets/img/projects/distribution-icon.svg";
 import RatingComponent from "./rating-component/RatingComponent";
 import CallBackPopup from "./callback-popup/CallBackPopup";
+import FirstInvestPopup from "./invest-popups/first-invest-popup/FirstInvestPopup";
+import SecondInvestPopup from "./invest-popups/second-inves-popup/SecondInvestPopup";
 
 const ProjectDetailsRightBlock = ({ activeIndex }) => {
   const allHouses = useSelector((state) => state.house.allHouses);
@@ -105,30 +107,14 @@ const ProjectDetailsRightBlock = ({ activeIndex }) => {
         <CallBackPopup toggleCallbackPopup={toggleCallbackPopup} />
       )}
       {isFirstInvestPopupOpen && (
-        <div className="first-invest-popup-background">
-          <div className="first-invest-popup-container">
-            <h2>First invest Popup Title</h2>
-            <p>Popup content goes here</p>
-            <button onClick={toggleFirstInvestPopup}>Close</button>
-            <button
-              onClick={() => {
-                setIsFirstInvestPopupOpen(false);
-                setIsSecondInvestPopupOpen(true);
-              }}
-            >
-              Next
-            </button>
-          </div>
-        </div>
+        <FirstInvestPopup
+          toggleFirstInvestPopup={toggleFirstInvestPopup}
+          setIsFirstInvestPopupOpen={setIsFirstInvestPopupOpen}
+          setIsSecondInvestPopupOpen={setIsSecondInvestPopupOpen}
+        />
       )}
       {isSecondInvestPopupOpen && (
-        <div className="second-invest-popup-background">
-          <div className="second-invest-popup-container">
-            <h2>Second invest Popup Title</h2>
-            <p>Popup content goes here</p>
-            <button onClick={toggleSecondInvestPopup}>Close</button>
-          </div>
-        </div>
+        <SecondInvestPopup toggleSecondInvestPopup={toggleSecondInvestPopup} />
       )}
     </div>
   );

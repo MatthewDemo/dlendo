@@ -7,9 +7,9 @@ import CalculatorOptions from "./calculator-options/CalculatorOptions";
 
 const Calculator = () => {
   const [currentAmount, setCurrentAmount] = useState(0);
-  const [maxAmount, setMaxAmount] = useState(100000);
+  const maxAmount = 100000
   const [dlendoInstantInterest, setDlendoInstantInterest] = useState(0);
-  const [interest, setInterest] = useState(8);
+  const interest = 8;
 
 
   return (

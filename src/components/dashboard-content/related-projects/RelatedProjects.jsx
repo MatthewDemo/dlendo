@@ -13,9 +13,6 @@ const PageNumber = styled.div`
   font-weight: 700;
   color: #ffffff;
 `;
-const CardsWrapper = styled.div`
-  display: flex;
-`;
 
 const RelatedProjects = () => {
   const [currentPage, setCurrentPage] = useState(1);

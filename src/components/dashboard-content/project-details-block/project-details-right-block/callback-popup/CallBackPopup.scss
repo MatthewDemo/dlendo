@@ -1,41 +1,245 @@
 .callback-popup-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.callback-popup-container {
+  width: 390px;
+  height: 480px;
+  background: #13153a;
+  border: 1px solid #323054;
+  padding: 20px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .callback-popup-header {
+    background: #1e2044;
+    border-bottom: 1px solid #323054;
     display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 2;
-  }
-  
-  .callback-popup-container {
-    width: 400px;
-    height: 450px;
-    background-color: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .callback-popup-container h2 {
+    justify-content: space-between;
     margin-top: 0;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: #1e2044;
+      border: 1px solid #323054;
+      cursor: pointer;
+    }
   }
-  
-  .callback-popup-container p {
-    margin-bottom: 20px;
+
+  h1 {
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8186af;
+    margin-top: 20px;
   }
-  
-  .callback-popup-container button {
-    padding: 10px 20px;
-    background-color: #0072ff;
-    color: white;
-    border: none;
-    border-radius: 5px;
+
+  .callback-popup-inputs-container {
+    margin-top: -10px;
+    .callback-popup-image-container {
+      height: 30px;
+      width: 30px;
+      border-right: 1px solid #323054;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .callback-popup-input-title {
+      position: absolute;
+      top: -20px;
+      left: 10px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #8186af;
+    }
+
+    .callback-popup-name-email-container {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 35px;
+      .callback-popup-name-container {
+        width: 180px;
+        height: 30px;
+        background: #15173c;
+        border: 1px solid #323054;
+        border-radius: 5px;
+        display: flex;
+        position: relative;
+
+        input {
+          width: 115px;
+          background: #15173c;
+          border: none;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #ffffff;
+          padding-left: 15px;
+          padding-right: 15px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .callback-popup-country-number-container {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 35px;
+
+      .callback-popup-country-container {
+        width: 167px;
+        height: 30px;
+        background: #15173c;
+        border: 1px solid #323054;
+        border-radius: 5px;
+        display: flex;
+        position: relative;
+
+        .callback-popup-country-select {
+          background: #15173c;
+          padding-left: 10px;
+          border: none;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #8186af;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .callback-popup-number-container {
+        width: 187px;
+        height: 30px;
+        background: #15173c;
+        border: 1px solid #323054;
+        border-radius: 5px;
+        display: flex;
+        position: relative;
+
+        .number-code-container {
+          height: 30px;
+          width: 50px;
+          border-right: 1px solid #323054;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        input {
+          width: 105px;
+          background: #15173c;
+          border: none;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #ffffff;
+          padding-left: 15px;
+          padding-right: 15px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .callback-popup-description-container {
+      margin-top: 35px;
+      position: relative;
+      width: 380px;
+      height: 92px;
+      background: #15173c;
+      border: 1px solid #323054;
+      border-radius: 5px;
+      position: relative;
+
+      textarea {
+        width: 350px;
+        margin-top: 5px;
+        height: 80px;
+        background: #15173c;
+        border: none;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #8186af;
+        padding-left: 15px;
+        padding-right: 15px;
+        word-wrap: break-word;
+        resize: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .request-button {
+    width: 257px;
+    height: 37px;
+    margin-top: 20px;
+    background: #13153a;
+    border: 1px solid #323054;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 22px;
     cursor: pointer;
+    border-radius: 10px;
+
+    &:hover{
+      background: #fa544d;
+    color: #ffffff;
+    }
   }
+
+}
