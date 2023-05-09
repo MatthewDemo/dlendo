@@ -9,6 +9,7 @@ import AllProjectsFooter from "./allProjectsFooter/AllProjectsFooter";
 const AllProjects = () => {
   const [cardsToShow, setCardsToShow] = useState(8);
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedAssetClass, setSelectedAssetClass] = useState(null);
   const allHouses = useSelector((state) => state.house.allHouses);
 
   const handleShowMore = () => {
@@ -29,13 +30,16 @@ const AllProjects = () => {
       {cardsToShow > 8 && <div className="shadow-navbar"></div>}
       <p className="all-projects-header-text">All projects</p>
       <div className="filter-sort-block">
-        <Filter />
+        <Filter setSelectedAssetClass={setSelectedAssetClass} />
         <div className="sort-block">
           <p>Sort by:</p>
           <Sort />
         </div>
       </div>
-      <AllProjectsCards cardsToShow={cardsToShow} cards={cardsOnCurrentPage} />
+      <AllProjectsCards
+        cards={cardsOnCurrentPage}
+        selectedAssetClass={selectedAssetClass}
+      />
       <AllProjectsFooter
         onShowMore={handleShowMore}
         cardsToShow={cardsToShow}
@@ -48,3 +52,5 @@ const AllProjects = () => {
 };
 
 export default AllProjects;
+
+

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ArrowDownIcon from "../../../../../assets/img/map/arrow-down-icon.svg";
 import "./FilterSelect.scss";
 
-const FilterSelect = ({ placeholder, options }) => {
+const FilterSelect = ({ placeholder, options, setSelectedAssetClass }) => {
   const [currentSortValue, setCurrentSortValue] = useState(placeholder);
 
   const handleSelectClick = (e) => {
@@ -20,8 +20,15 @@ const FilterSelect = ({ placeholder, options }) => {
         </div>
       </div>
       <div className="select__body">
-        {options.map((option) => (
-          <div className="select__item" onClick={(e) => handleSelectClick(e)}>
+        {options.map((option, idx) => (
+          <div
+            className="select__item"
+            key={idx}
+            onClick={(e) => {
+              handleSelectClick(e);
+              setSelectedAssetClass && setSelectedAssetClass(option);
+            }}
+          >
             {option}
           </div>
         ))}
@@ -31,3 +38,5 @@ const FilterSelect = ({ placeholder, options }) => {
 };
 
 export default FilterSelect;
+
+
