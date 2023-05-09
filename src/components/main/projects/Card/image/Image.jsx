@@ -61,6 +61,7 @@ const ImageWrapper = styled.div`
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+  background-size: contain;
    &:hover .main-img {
      opacity: 0.4;
      background-color: rgba(0, 0, 0, 0.9);

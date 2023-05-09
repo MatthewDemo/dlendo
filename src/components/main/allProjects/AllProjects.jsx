@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import "./AllProjects.scss";
 import Filter from "./filter/Filter";
 import Sort from "./sort/Sort";
@@ -6,6 +7,18 @@ import AllProjectsCards from "./allProjectsCards/AllProjectsCards";
 import AllProjectsFooter from "./allProjectsFooter/AllProjectsFooter";
 
 const AllProjects = () => {
+  const [cardsToShow, setCardsToShow] = useState(8);
+  const [currentPage, setCurrentPage] = useState(1);
+  const allHouses = useSelector((state) => state.house.allHouses);
+
+  const handleShowMore = () => {
+    setCardsToShow(cardsToShow + 8);
+  };
+
+  const firstCardIndex = (currentPage - 1) * cardsToShow;
+  const lastCardIndex = Math.min(currentPage * cardsToShow, allHouses.length);
+  const cardsOnCurrentPage = allHouses.slice(firstCardIndex, lastCardIndex);
+
   return (
     <div className="all-projects-block">
       <p className="all-projects-header-text">All projects</p>
@@ -16,8 +29,14 @@ const AllProjects = () => {
           <Sort />
         </div>
       </div>
-      <AllProjectsCards />
-      <AllProjectsFooter />
+      <AllProjectsCards cardsToShow={cardsToShow} cards={cardsOnCurrentPage}/>
+      <AllProjectsFooter
+        onShowMore={handleShowMore}
+        cardsToShow={cardsToShow}
+        allCardsToShow={allHouses.length}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
     </div>
   );
 };
