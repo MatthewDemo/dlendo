@@ -1,7 +1,21 @@
 .all-projects-block {
   margin-top: 60px;
   width: 1070px;
+  position: relative;
   
+
+  .shadow-navbar{
+    position: absolute;
+    margin-left: -301px;
+    margin-top: 1190px;
+  // top: 0;
+  // left: 0;
+  // bottom: 0;
+  height: 990px;
+  width: 280px;
+  background-color: #15173C;;
+  border-right: 1px solid #26264a;
+  }
 
   .all-projects-header-text {
     font-family: "Kanit";

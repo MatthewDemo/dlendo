@@ -26,6 +26,7 @@ const AllProjects = () => {
 
   return (
     <div className="all-projects-block">
+      {cardsToShow > 8 && <div className="shadow-navbar"></div>}
       <p className="all-projects-header-text">All projects</p>
       <div className="filter-sort-block">
         <Filter />
