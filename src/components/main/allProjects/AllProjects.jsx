@@ -12,7 +12,12 @@ const AllProjects = () => {
   const allHouses = useSelector((state) => state.house.allHouses);
 
   const handleShowMore = () => {
-    setCardsToShow(cardsToShow + 8);
+    if (currentPage == 1) {
+      setCardsToShow(cardsToShow + 8);
+    } else {
+      setCurrentPage(1);
+      setCardsToShow(cardsToShow + 8);
+    }
   };
 
   const firstCardIndex = (currentPage - 1) * cardsToShow;
@@ -29,7 +34,7 @@ const AllProjects = () => {
           <Sort />
         </div>
       </div>
-      <AllProjectsCards cardsToShow={cardsToShow} cards={cardsOnCurrentPage}/>
+      <AllProjectsCards cardsToShow={cardsToShow} cards={cardsOnCurrentPage} />
       <AllProjectsFooter
         onShowMore={handleShowMore}
         cardsToShow={cardsToShow}
