@@ -3,15 +3,13 @@ import "./ProjectDetailsBlock.scss";
 import ProjectDetailsLeftBlock from "./project-details-left-block/ProjectDetailsLeftBlock";
 import ProjectDetailsRightBlock from "./project-details-right-block/ProjectDetailsRightBlock";
 
-const ProjectDetailsBlock = ({activeIndex, setActiveIndex}) => {
+const ProjectDetailsBlock = () => {
 
   return (
     <div className="project-details-block" id="project-details-block">
       <ProjectDetailsLeftBlock
-        activeIndex={activeIndex}
-        setActiveIndex={setActiveIndex}
       />
-      <ProjectDetailsRightBlock activeIndex={activeIndex} />
+      <ProjectDetailsRightBlock />
     </div>
   );
 };

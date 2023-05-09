@@ -26,8 +26,9 @@ const initialState = {
       distribution: "Yearly",
       description:
         "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
-      coordinates: [50.848696231323466, 11.73586373213352],
-      assetClass: "commercial"
+      coordinates: [52.16169185611335, 9.186559630109148],
+      assetClass: "commercial",
+      index: 0
     },
     {
       photos: [Home2, Home2_1],
@@ -40,8 +41,9 @@ const initialState = {
       distribution: "Yearly",
       description:
         "Dieses wunderschöne Einfamilienhaus bietet Ihnen modernen Komfort und eine einzigartige Atmosphäre,",
-      coordinates: [55.60667101051827, 9.187411915986292],
-      assetClass: "residental"
+      coordinates: [57.01423283652072, 9.94542265928368],
+      assetClass: "residental",
+      index: 1
     },
     {
       photos: [Home3, Home3_1],
@@ -54,8 +56,9 @@ const initialState = {
       distribution: "Yearly",
       description:
         "Das charmante Stadthaus im Herzen der Stadt vereint historischen Charme mit zeitgemäßer Ausstattung",
-      coordinates: [52.723427527818934, -0.8048238694044272],
-      assetClass: "commercial"
+      coordinates: [50.8315645482643, -4.083145290741502],
+      assetClass: "commercial",
+      index: 2
     },
     {
       photos: [Home4],
@@ -68,8 +71,9 @@ const initialState = {
       distribution: "Yearly",
       description:
         "Dieses stilvolle Mehrfamilienhaus besticht durch seine moderne Architektur und hochwertige Ausstattung.",
-      coordinates: [48.19462518951254, 15.060658770338424],
-      assetClass: "residental"
+      coordinates: [46.83343089576256, 14.328789093860452],
+      assetClass: "residental",
+      index: 3
     },
     {
       photos: [Home5],
@@ -82,8 +86,9 @@ const initialState = {
       distribution: "Monthly",
       description:
         "Die Doppelhäuser bieten ein Höchstmaß an Lebensqualität",
-      coordinates: [52.335409704948184, 16.69539923876806],
-      assetClass: "commercial"
+      coordinates: [53.99780322524947, 17.00300235751887],
+      assetClass: "commercial",
+      index: 4
     },
     {
       photos: [Home6],
@@ -96,8 +101,9 @@ const initialState = {
       distribution: "Yearly",
       description:
         "Die Eigentumswohnungen sind hochwertig gebaut, variabel…",
-      coordinates: [53.59982375707324, 11.012748850350643],
-      assetClass: "residental"
+      coordinates: [50.042577005554165, 9.953731496412214],
+      assetClass: "residental",
+      index: 5
     },
     {
       photos: [Home7],
@@ -110,8 +116,9 @@ const initialState = {
       distribution: "Monthly",
       description:
         "Ruhig wohnen und zentral leben in einer sehr exklusiven, kleinen",
-      coordinates: [50.20383499791731, 6.74824656805034],
-      assetClass: "residental"
+      coordinates: [50.73460432115178, 7.840586229358913],
+      assetClass: "residental",
+      index: 6
     },
     {
       photos: [Home8],
@@ -124,8 +131,9 @@ const initialState = {
       distribution: "Monthly",
       description:
         "Ruhig wohnen und zentral leben in einer sehr exklusiven, kleinen",
-      coordinates: [48.51644147290318, 5.169705509958305],
-      assetClass: "residental"
+      coordinates: [45.819363849090585, 0.8082097138707984],
+      assetClass: "residental",
+      index: 7
     },
     {
       photos: [Home8],
@@ -138,8 +146,9 @@ const initialState = {
       distribution: "Monthly",
       description:
         "Ruhig wohnen und zentral leben in einer sehr exklusiven, kleinen",
-      coordinates: [48.51644147290318, 5.169705509958305],
-      assetClass: "residental"
+      coordinates: [48.16576158644448, 4.915138969903859],
+      assetClass: "residental",
+      index: 8
     },
     {
       photos: [Home7],
@@ -152,8 +161,9 @@ const initialState = {
       distribution: "Monthly",
       description:
         "Ruhig wohnen und zentral leben in einer sehr exklusiven, kleinen",
-      coordinates: [50.20383499791731, 6.74824656805034],
-      assetClass: "residental"
+      coordinates: [48.81990905588695, 13.27552218492335],
+      assetClass: "residental",
+      index: 9
     },
     {
       photos: [Home6],
@@ -166,8 +176,9 @@ const initialState = {
       distribution: "Yearly",
       description:
         "Die Eigentumswohnungen sind hochwertig gebaut, variabel…",
-      coordinates: [53.59982375707324, 11.012748850350643],
-      assetClass: "residental"
+      coordinates: [48.64581442447542, 8.609737516454658],
+      assetClass: "residental",
+      index: 10
     },
     {
       photos: [Home5],
@@ -180,8 +191,9 @@ const initialState = {
       distribution: "Monthly",
       description:
         "Die Doppelhäuser bieten ein Höchstmaß an Lebensqualität",
-      coordinates: [52.335409704948184, 16.69539923876806],
-      assetClass: "residental"
+      coordinates: [50.85779702637274, 18.492592051940214],
+      assetClass: "residental",
+      index: 11
     },
     {
       photos: [Home4],
@@ -194,8 +206,9 @@ const initialState = {
       distribution: "Yearly",
       description:
         "Dieses stilvolle Mehrfamilienhaus besticht durch seine moderne Architektur und hochwertige Ausstattung.",
-      coordinates: [48.19462518951254, 15.060658770338424],
-      assetClass: "residental"
+      coordinates: [48.198124282125114, 14.490955491189231],
+      assetClass: "residental",
+      index: 12
     },
     {
       photos: [Home3],
@@ -208,8 +221,9 @@ const initialState = {
       distribution: "Yearly",
       description:
         "Das charmante Stadthaus im Herzen der Stadt vereint historischen Charme mit zeitgemäßer Ausstattung",
-      coordinates: [52.723427527818934, -0.8048238694044272],
-      assetClass: "residental"
+      coordinates: [52.63019044194845, 1.0234672037996013],
+      assetClass: "residental",
+      index: 13
     },
     {
       photos: [Home2],
@@ -222,8 +236,9 @@ const initialState = {
       distribution: "Yearly",
       description:
         "Dieses wunderschöne Einfamilienhaus bietet Ihnen modernen Komfort und eine einzigartige Atmosphäre,",
-      coordinates: [55.60667101051827, 9.187411915986292],
-      assetClass: "residental"
+      coordinates: [56.428334896941486, 9.35856235024316],
+      assetClass: "residental",
+      index: 14
     },
     {
       photos: [Home1, Home1_1],
@@ -236,8 +251,9 @@ const initialState = {
       distribution: "Yearly",
       description:
         "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
-      coordinates: [50.848696231323466, 11.73586373213352],
-      assetClass: "residental"
+      coordinates: [52.58791575671688, 12.490946110191473],
+      assetClass: "residental",
+      index: 15
     },
   ],
 };

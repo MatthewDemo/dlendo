@@ -4,7 +4,6 @@ import Projects from "./projects/Projects";
 import Map from "./map/Map";
 import AllProjects from "./allProjects/AllProjects";
 
-
 const Main = () => {
   return (
     <div className="main">
@@ -14,6 +13,5 @@ const Main = () => {
     </div>
   );
 };
-
 
 export default Main;

@@ -13,9 +13,9 @@ import CallBackPopup from "./callback-popup/CallBackPopup";
 import FirstInvestPopup from "./invest-popups/first-invest-popup/FirstInvestPopup";
 import SecondInvestPopup from "./invest-popups/second-invest-popup/SecondInvestPopup";
 
-const ProjectDetailsRightBlock = ({ activeIndex }) => {
+const ProjectDetailsRightBlock = () => {
   const allHouses = useSelector((state) => state.house.allHouses);
-
+  const activeIndex = useSelector((state) => state.activeCard.activeCard);
   const [isCallbackPopupOpen, setIsCallbackPopupOpen] = useState(false);
   const [isFirstInvestPopupOpen, setIsFirstInvestPopupOpen] = useState(false);
   const [isSecondInvestPopupOpen, setIsSecondInvestPopupOpen] = useState(false);

@@ -7,7 +7,7 @@ const NavbarUserPanel = () => {
     <div className="navbar-user-panel">
       <p>USER PANEL</p>
       <ul>
-        <Link to="/project-details" style={{ textDecoration: "none" }}>
+        <Link to="/" style={{ textDecoration: "none" }}>
           <li className="user-panel-dashboard">
             <img src="" alt="" />{" "}
             <span className="userpanel-text">Dashboard</span>

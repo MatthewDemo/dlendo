@@ -2,9 +2,9 @@ import React from "react";
 import "./ProjectNews.scss";
 import { useSelector } from "react-redux";
 
-const ProjectNews = ({ activeIndex, setActiveIndex }) => {
+const ProjectNews = () => {
   const allHouses = useSelector((state) => state.house.allHouses);
-
+  const activeIndex = useSelector((state) => state.activeCard.activeCard);
   return (
     <div className="project-news-block">
       <span className="project-news-block-title" id="project-news-block">Project news</span>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './ProjectDetailsLeftBlock.scss'
+import "./ProjectDetailsLeftBlock.scss";
 import ShareIcon from "../../../../assets/img/dashboard-icons/project-details-icons/dashboard-project-details-share-button-icon.svg";
 import PdfIcon from "../../../../assets/img/dashboard-icons/project-details-icons/dashboard-project-details-pdf-button-icon.svg";
 import PrintIcon from "../../../../assets/img/dashboard-icons/project-details-icons/dashboard-project-details-print-button-icon.svg";
@@ -8,8 +8,9 @@ import LeftWhiteArrow from "../../../../assets/img/projects/left-white-arrow.svg
 import RightWhiteArrow from "../../../../assets/img/projects/right-white-arrow.svg";
 import { useSelector } from "react-redux";
 
-const ProjectDetailsLeftBlock = ({ activeIndex, setActiveIndex }) => {
+const ProjectDetailsLeftBlock = () => {
   const allHouses = useSelector((state) => state.house.allHouses);
+  const activeIndex = useSelector((state) => state.activeCard.activeCard);
   const [activePhotoIndex, setActivePhotoIndex] = useState(0);
 
   const handleRightButtonClick = () => {
@@ -54,17 +55,20 @@ const ProjectDetailsLeftBlock = ({ activeIndex, setActiveIndex }) => {
         />
         <div className="house-buttons-row">
           <div className="house-buttons-container">
-            {allHouses.map((house, index) => (
+            {allHouses[activeIndex].photos.map((photo, index) => (
               <div
                 key={index}
                 className={`house-button ${
-                  index === activeIndex ? "active" : ""
+                  index === activePhotoIndex ? "active" : ""
                 }`}
-                onClick={() => setActiveIndex(index)}
+                onClick={() => setActivePhotoIndex(index)}
               />
             ))}
-            <span>{`${activeIndex + 1}/${allHouses.length}`}</span>
+            <span>{`${activePhotoIndex + 1}/${
+              allHouses[activeIndex].photos.length
+            }`}</span>
           </div>
+
           <div className="house-info-buttons-container">
             <div className="house-info-button">
               <img src={ShareIcon} alt="share" />

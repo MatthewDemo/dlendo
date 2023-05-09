@@ -13,7 +13,7 @@ const AllProjects = () => {
   const allHouses = useSelector((state) => state.house.allHouses);
 
   const handleShowMore = () => {
-    if (currentPage == 1) {
+    if (currentPage === 1) {
       setCardsToShow(cardsToShow + 8);
     } else {
       setCurrentPage(1);

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Dashboard.scss";
+import "./ProjectDetails.scss";
 import Navbar from "../../components/navbar/Navbar";
 import DashboardSubbar from "../../components/dashboard-subbar/DashboardSubbar";
 import ProjectDetailsBlock from "../../components/dashboard-content/project-details-block/ProjectDetailsBlock";
@@ -19,23 +19,17 @@ import ReturnToDashboardButton from "../../components/dashboard-content/return-t
 import UpButton from "../../components/dashboard-content/up-button/UpButton";
 import RelatedProjects from "../../components/dashboard-content/related-projects/RelatedProjects";
 
-const Dashboard = () => {
+const ProjectDetails = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className="dashboard-page">
-      <Navbar height='7550px'/>
+      <Navbar height="7550px" />
       <DashboardSubbar />
       <div className="dashboard-content-block" id="dashboard-content-block">
-        <ProjectDetailsBlock
-          activeIndex={activeIndex}
-          setActiveIndex={setActiveIndex}
-        />
+        <ProjectDetailsBlock setActiveIndex={setActiveIndex} />
         <div className="calculator-milestones-container">
-          <Calculator
-            activeIndex={activeIndex}
-            setActiveIndex={setActiveIndex}
-          />
+          <Calculator setActiveIndex={setActiveIndex} />
           <ProjectMilestones />
         </div>
         <ProjectNews
@@ -53,10 +47,10 @@ const Dashboard = () => {
         <Location activeIndex={activeIndex} />
         <ReturnToDashboardButton />
         <UpButton />
-      <RelatedProjects />
+          <RelatedProjects />
       </div>
     </div>
   );
 };
 
-export default Dashboard;
+export default ProjectDetails;

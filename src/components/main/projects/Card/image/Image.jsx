@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import LeftWhiteArrow from "../../../../../assets/img/projects/left-white-arrow.svg";
 import RightWhiteArrow from "../../../../../assets/img/projects/right-white-arrow.svg";
 import EyeIcon from "../../../../../assets/img/projects/eye-icon.svg";
 import styled from "styled-components";
+import { useDispatch } from "react-redux";
+import { changeActiveCard } from "../../../../../redux/slices/activeCardSlice";
 
 const Button = styled.button`
   width: 30px;
@@ -62,10 +65,10 @@ const ImageWrapper = styled.div`
   overflow: hidden;
   box-sizing: border-box;
   background-size: contain;
-   &:hover .main-img {
-     opacity: 0.4;
-     background-color: rgba(0, 0, 0, 0.9);
-   }
+  &:hover .main-img {
+    opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
 `;
 
 const OverlayButton = styled.button`
@@ -90,6 +93,7 @@ const OverlayButton = styled.button`
 `;
 
 const Image = ({ card }) => {
+  const dispatch = useDispatch();
   const [activePhoto, setActivePhoto] = useState(0);
 
   const handleLeftButtonClick = () => {
@@ -106,10 +110,6 @@ const Image = ({ card }) => {
     }
   };
 
-  const handleOverlayButtonClick = () => {
-    // Действия при нажатии на кнопку
-  };
-
   return (
     <ImageWrapper>
       <LeftButton onClick={handleLeftButtonClick}>
@@ -120,9 +120,16 @@ const Image = ({ card }) => {
         <img src={RightWhiteArrow} alt="" />
       </RightButton>
       <AddressWrapper>{card.address}</AddressWrapper>
-      <OverlayButton onClick={handleOverlayButtonClick}>
-        <img src={EyeIcon} alt="" />
-      </OverlayButton>
+      <Link to="/project-details" style={{ textDecoration: "none" }}>
+        <OverlayButton
+          onClick={() => {
+            dispatch(changeActiveCard(card.index));
+            window.scrollTo(0, 0);
+          }}
+        >
+          <img src={EyeIcon} alt="" />
+        </OverlayButton>
+      </Link>
     </ImageWrapper>
   );
 };
