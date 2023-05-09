@@ -1,0 +1,178 @@
+.second-invest-popup-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.second-invest-popup-container {
+  width: 440px;
+  height: 360px;
+  background: #13153a;
+  border: 1px solid #323054;
+  padding: 20px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .second-invest-popup-header {
+    background: #1e2044;
+    border-bottom: 1px solid #323054;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: #1e2044;
+      border: 1px solid #323054;
+      cursor: pointer;
+    }
+  }
+
+  h1 {
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8186af;
+    margin-top: 32px;
+  }
+
+  .second-invest-popup-investment-amount-container {
+    display: flex;
+    height: 30px;
+    width: 410px;
+    background: #15173c;
+    border: 1px solid #323054;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 20px;
+
+    .second-invest-popup-input-title {
+      position: absolute;
+      top: -20px;
+      left: 10px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #8186af;
+    }
+
+    .second-invest-popup-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .second-invest-popup-second-column-image-container {
+        padding-left: 8px;
+        padding-right: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #323054;
+        height: 30px;
+        img {
+          height: 15px;
+        }
+      }
+
+      input {
+        font-family: "Montserrat";
+        width: 260px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        border: none;
+        color: #8186af;
+        background: #15173c;
+        padding-left: 15px;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .second-invest-popup-list {
+    margin-left: -40px;
+    margin-top: 30px;
+    .second-invest-popup-list-item {
+      display: flex;
+      height: 20px;
+      width: 390px;
+      background: #1e2044;
+      border: 1px solid #323054;
+      border-radius: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+
+      .second-invest-popup-first-column {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #8186af;
+      }
+      .second-invest-popup-second-column {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .proceed-button{
+    width: 410px;
+    height: 37px;
+    margin-top: 20px;
+    background: #13153a;
+    border: 1px solid #323054;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+
+    &:hover {
+      background: #fa544d;
+      color: #ffffff;
+    }
+  }
+}

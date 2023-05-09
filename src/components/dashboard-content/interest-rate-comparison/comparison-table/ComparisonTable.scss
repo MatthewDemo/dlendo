@@ -67,7 +67,8 @@
 
   .profit-color-box {
     height: 28px;
-    width: 86px;
+    max-width: 86px;
+    white-space: nowrap;
     background: rgba(67, 252, 255, 0.05);
     border-radius: 5px;
     display: flex;

@@ -11,7 +11,7 @@ import DistributionIcon from "../../../../assets/img/projects/distribution-icon.
 import RatingComponent from "./rating-component/RatingComponent";
 import CallBackPopup from "./callback-popup/CallBackPopup";
 import FirstInvestPopup from "./invest-popups/first-invest-popup/FirstInvestPopup";
-import SecondInvestPopup from "./invest-popups/second-inves-popup/SecondInvestPopup";
+import SecondInvestPopup from "./invest-popups/second-invest-popup/SecondInvestPopup";
 
 const ProjectDetailsRightBlock = ({ activeIndex }) => {
   const allHouses = useSelector((state) => state.house.allHouses);

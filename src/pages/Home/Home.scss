@@ -4,7 +4,12 @@ body {
 }
 .home {
   display: flex;
-  flex-direction: column;
   height: fit-content;
 
+}
+
+@media only screen and (min-width: 1400px) {
+  .home {
+    margin-left: calc((100vw - 1400px) / 2 );
+  }
 }

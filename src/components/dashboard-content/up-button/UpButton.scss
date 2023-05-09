@@ -1,6 +1,7 @@
 .upButton {
   position: fixed;
-  left: 1250px;
+  right: 3%;
+  top: 50%;
   bottom: 20px;
   background: #1e2044;
   border: 1px solid #323054;
@@ -16,5 +17,11 @@
   z-index: 1;
   &:hover {
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .upButton {
+    right: calc((100vw - 1400px) / 2 );
   }
 }

@@ -108,8 +108,8 @@
     .add-icon {
       height: 10px;
       position: absolute;
-      left: 50px;
-      top: 145px;
+      left: 10px;
+      top: 8px;
     }
 
     .navbar-user-balance-text {
@@ -129,6 +129,10 @@
       font-size: 12px;
       line-height: 15px;
       font-family: "Montserrat", sans-serif;
+    }
+
+    .balance-icon-container{
+      position: relative;
     }
   }
 }

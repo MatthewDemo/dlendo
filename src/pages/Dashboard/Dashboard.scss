@@ -2,6 +2,13 @@
   display: flex;
   flex-direction: row;
   height: 100vh;
+  position: relative;
+}
+
+@media only screen and (min-width: 1400px) {
+  .dashboard-page {
+    margin-left: calc((100vw - 1400px) / 2 );
+  }
 }
 
 .dashboard-item-title {

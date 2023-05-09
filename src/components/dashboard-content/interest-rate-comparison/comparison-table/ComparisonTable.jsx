@@ -1,39 +1,68 @@
-import React from 'react'
-import './ComparisonTable.scss'
+import React from "react";
+import "./ComparisonTable.scss";
 
-const ComparisonTable = () => {
+const ComparisonTable = ({loanAmountValue}) => {
+const interestRate = 3.75;
+const DeutscheBankLoanRate = 2.55;
+const CommerzbankLoanRate = 2.95;
+const BankgruppeLoanRate = 1.90
+const DlendoLoanRate = 1.2;
   return (
     <div class="table-container">
-    <div class="table-header">
-      <div>Bank name</div>
-      <div>Interest rate</div>
-      <div>Loan rate</div>
-      <div>Profit margin (%)</div>
-      <div>Profit margin (€)</div>
+      <div class="table-header">
+        <div>Bank name</div>
+        <div>Interest rate</div>
+        <div>Loan rate</div>
+        <div>Profit margin (%)</div>
+        <div>Profit margin (€)</div>
+      </div>
+      <div class="table-row">
+        <div className="table-bank-name">Deutsche Bank</div>
+        <div className="table-rate">{interestRate} %</div>
+        <div className="table-rate">{DeutscheBankLoanRate} %</div>
+        <div className="table-profit">
+          {" "}
+          <div className="profit-color-box">{(interestRate - DeutscheBankLoanRate).toFixed(2)} %</div>{" "}
+        </div>
+        <div className="table-profit">
+          <div className="profit-color-box">€ {((loanAmountValue * (interestRate - DeutscheBankLoanRate).toFixed(2))/100).toFixed(2)}</div>
+        </div>
+      </div>
+      <div class="table-row">
+        <div className="table-bank-name">Commerzbank</div>
+        <div className="table-rate">{interestRate} %</div>
+        <div className="table-rate">{CommerzbankLoanRate} %</div>
+        <div className="table-profit">
+          <div className="profit-color-box">{(interestRate - CommerzbankLoanRate).toFixed(2)} %</div>
+        </div>
+        <div className="table-profit">
+          <div className="profit-color-box">€ {((loanAmountValue * (interestRate - CommerzbankLoanRate).toFixed(2))/100).toFixed(2)}</div>
+        </div>
+      </div>
+      <div class="table-row">
+        <div className="table-bank-name">KFW Bankgruppe</div>
+        <div className="table-rate">{interestRate} %</div>
+        <div className="table-rate">{BankgruppeLoanRate} %</div>
+        <div className="table-profit">
+          <div className="profit-color-box">{(interestRate - BankgruppeLoanRate).toFixed(2)} %</div>
+        </div>
+        <div className="table-profit">
+          <div className="profit-color-box">€ {((loanAmountValue * (interestRate - BankgruppeLoanRate).toFixed(2))/100).toFixed(2)}</div>
+        </div>
+      </div>
+      <div class="table-row">
+        <div className="table-bank-name">Dlendo</div>
+        <div className="table-rate">{interestRate} %</div>
+        <div className="table-rate">{DlendoLoanRate} %</div>
+        <div className="table-profit">
+          <div className="profit-color-box">{(interestRate - DlendoLoanRate).toFixed(2)} %</div>
+        </div>
+        <div className="table-profit">
+          <div className="profit-color-box">€ {((loanAmountValue * (interestRate - DlendoLoanRate).toFixed(2))/100).toFixed(2)}</div>
+        </div>
+      </div>
     </div>
-    <div class="table-row">
-      <div className="table-bank-name">Deutsche Bank</div>
-      <div className="table-rate">% 3.75</div>
-      <div className="table-rate">% 4.75</div>
-      <div className="table-profit"> <div className="profit-color-box">% 0.65</div> </div>
-      <div className="table-profit"><div className="profit-color-box">€ 525.25</div></div>
-    </div>
-    <div class="table-row">
-      <div className="table-bank-name">Commerzbank</div>
-      <div className="table-rate">% 4.15</div>
-      <div className="table-rate">% 3.60</div>
-      <div className="table-profit"><div className="profit-color-box">% 0.80</div></div>
-      <div className="table-profit"><div className="profit-color-box">€ 23.25</div></div>
-    </div>
-    <div class="table-row">
-      <div className="table-bank-name">KFW Bankgruppe</div>
-      <div className="table-rate">% 2.50</div>
-      <div className="table-rate">% 3.55</div>
-      <div className="table-profit"><div className="profit-color-box">% 1.15</div></div>
-      <div className="table-profit"><div className="profit-color-box">€ 9.95</div></div>
-    </div>
-  </div>
-  )
-}
+  );
+};
 
-export default ComparisonTable
+export default ComparisonTable;

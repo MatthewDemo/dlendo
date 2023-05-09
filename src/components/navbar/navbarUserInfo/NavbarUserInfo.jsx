@@ -28,8 +28,10 @@ const NavbarUserInfo = () => {
       </div>
       <ul className="navbar-user-balance-container">
         <li>
-          <img src={BalanceIcon} alt="" />
-          <img src={BalanceAddIcon} className="add-icon" alt="" />
+          <div className="balance-icon-container">
+            <img src={BalanceIcon} alt="" />
+            <img src={BalanceAddIcon} className="add-icon" alt="" />
+          </div>
           <span className="navbar-user-balance-text">Balance</span>
           <span className="navbar-user-balance">€ 120267.09</span>
         </li>
