@@ -22,7 +22,7 @@ const initialState = {
       totalPrice: 642000,
       return: 8,
       term: 24,
-      location: "Germany",
+      location: "Berlin",
       distribution: "Yearly",
       description:
         "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",
@@ -37,7 +37,7 @@ const initialState = {
       totalPrice: 847000,
       return: 9,
       term: 22,
-      location: "Denmark",
+      location: "Kopengagen",
       distribution: "Yearly",
       description:
         "Dieses wunderschöne Einfamilienhaus bietet Ihnen modernen Komfort und eine einzigartige Atmosphäre,",
@@ -52,7 +52,7 @@ const initialState = {
       totalPrice: 847000,
       return: 7,
       term: 26,
-      location: "England",
+      location: "London",
       distribution: "Yearly",
       description:
         "Das charmante Stadthaus im Herzen der Stadt vereint historischen Charme mit zeitgemäßer Ausstattung",
@@ -67,7 +67,7 @@ const initialState = {
       totalPrice: 235000,
       return: 10,
       term: 19,
-      location: "Austria",
+      location: "Viena",
       distribution: "Yearly",
       description:
         "Dieses stilvolle Mehrfamilienhaus besticht durch seine moderne Architektur und hochwertige Ausstattung.",
@@ -82,7 +82,7 @@ const initialState = {
       totalPrice: 684300,
       return: 6,
       term: 6,
-      location: "Poland",
+      location: "Warsaw",
       distribution: "Monthly",
       description:
         "Die Doppelhäuser bieten ein Höchstmaß an Lebensqualität",
@@ -97,7 +97,7 @@ const initialState = {
       totalPrice: 684300,
       return: 10,
       term: 12,
-      location: "Germany",
+      location: "Munich",
       distribution: "Yearly",
       description:
         "Die Eigentumswohnungen sind hochwertig gebaut, variabel…",
@@ -112,7 +112,7 @@ const initialState = {
       totalPrice: 384300,
       return: 4,
       term: 6,
-      location: "Germany",
+      location: "Frankfurt",
       distribution: "Monthly",
       description:
         "Ruhig wohnen und zentral leben in einer sehr exklusiven, kleinen",
@@ -127,7 +127,7 @@ const initialState = {
       totalPrice: 444300,
       return: 7,
       term: 24,
-      location: "France",
+      location: "Paris",
       distribution: "Monthly",
       description:
         "Ruhig wohnen und zentral leben in einer sehr exklusiven, kleinen",
@@ -142,7 +142,7 @@ const initialState = {
       totalPrice: 444300,
       return: 7,
       term: 24,
-      location: "France",
+      location: "Lion",
       distribution: "Monthly",
       description:
         "Ruhig wohnen und zentral leben in einer sehr exklusiven, kleinen",
@@ -157,7 +157,7 @@ const initialState = {
       totalPrice: 384300,
       return: 4,
       term: 6,
-      location: "Germany",
+      location: "Levercusen",
       distribution: "Monthly",
       description:
         "Ruhig wohnen und zentral leben in einer sehr exklusiven, kleinen",
@@ -172,7 +172,7 @@ const initialState = {
       totalPrice: 684300,
       return: 10,
       term: 12,
-      location: "Germany",
+      location: "Keln",
       distribution: "Yearly",
       description:
         "Die Eigentumswohnungen sind hochwertig gebaut, variabel…",
@@ -187,7 +187,7 @@ const initialState = {
       totalPrice: 684300,
       return: 6,
       term: 6,
-      location: "Poland",
+      location: "Krakow",
       distribution: "Monthly",
       description:
         "Die Doppelhäuser bieten ein Höchstmaß an Lebensqualität",
@@ -202,7 +202,7 @@ const initialState = {
       totalPrice: 235000,
       return: 10,
       term: 19,
-      location: "Austria",
+      location: "Zalzburg",
       distribution: "Yearly",
       description:
         "Dieses stilvolle Mehrfamilienhaus besticht durch seine moderne Architektur und hochwertige Ausstattung.",
@@ -217,7 +217,7 @@ const initialState = {
       totalPrice: 847000,
       return: 7,
       term: 26,
-      location: "England",
+      location: "Manchester",
       distribution: "Yearly",
       description:
         "Das charmante Stadthaus im Herzen der Stadt vereint historischen Charme mit zeitgemäßer Ausstattung",
@@ -232,7 +232,7 @@ const initialState = {
       totalPrice: 847000,
       return: 9,
       term: 22,
-      location: "Denmark",
+      location: "Odense",
       distribution: "Yearly",
       description:
         "Dieses wunderschöne Einfamilienhaus bietet Ihnen modernen Komfort und eine einzigartige Atmosphäre,",
@@ -247,7 +247,7 @@ const initialState = {
       totalPrice: 642000,
       return: 8,
       term: 24,
-      location: "Germany",
+      location: "Bremen",
       distribution: "Yearly",
       description:
         "Für die Ausführung gelten die zum Zeitpunkt des Bauantrages….",

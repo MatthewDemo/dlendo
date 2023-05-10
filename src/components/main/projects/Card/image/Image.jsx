@@ -70,7 +70,6 @@ const ImageWrapper = styled.div`
     background-color: rgba(0, 0, 0, 0.9);
   }
 `;
-
 const OverlayButton = styled.button`
   position: absolute;
   top: 50%;
@@ -120,8 +119,7 @@ const Image = ({ card }) => {
         <img src={RightWhiteArrow} alt="" />
       </RightButton>
       <AddressWrapper>{card.address}</AddressWrapper>
-      <Link to="/project-details" style={{ textDecoration: "none" }}>
-        <OverlayButton
+      <Link to={{ pathname: `/project-details/${card.location}`, state: { card } }} style={{ textDecoration: "none" }}>        <OverlayButton
           onClick={() => {
             dispatch(changeActiveCard(card.index));
             window.scrollTo(0, 0);

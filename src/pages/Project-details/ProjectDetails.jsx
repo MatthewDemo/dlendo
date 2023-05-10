@@ -21,7 +21,6 @@ import RelatedProjects from "../../components/dashboard-content/related-projects
 
 const ProjectDetails = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-
   return (
     <div className="dashboard-page">
       <Navbar height="7550px" />

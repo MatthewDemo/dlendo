@@ -36,9 +36,6 @@ const PageNumber = styled.div`
   font-weight: 700;
   color: #ffffff;
 `;
-const CardsWrapper = styled.div`
-  display: flex;
-`;
 
 const Projects = () => {
   const [activeButton, setActiveButton] = useState("new");
@@ -93,11 +90,11 @@ const Projects = () => {
           </button>
         </div>
       </div>
-      <CardsWrapper>
+      <div className="cards-wrapper">
         {currentCards.map((card) => (
           <Card card={card} />
         ))}
-      </CardsWrapper>
+      </div>
     </div>
   );
 };
