@@ -8,7 +8,7 @@ const DlendoRate = () => {
           Dlendo rate<span>*</span>
         </p>
         <div className="interest-rate-percentage-container">
-          <h1>5.2%</h1>
+          <h1>1.2%</h1>
         </div>
       </div>
   )
