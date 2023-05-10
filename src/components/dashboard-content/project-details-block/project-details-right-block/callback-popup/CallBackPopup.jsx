@@ -7,6 +7,8 @@ import CallbackPopupEmailIcon from "../../../../../assets/img/popup-images/callb
 import CallbackPopupNumberIcon from "../../../../../assets/img/popup-images/callback-popup-icons/callback-popup-number-icon.svg";
 import CallbackPopupDateIcon from "../../../../../assets/img/popup-images/callback-popup-icons/callback-popup-date-icon.svg";
 import CallbackPopupTimeIcon from "../../../../../assets/img/popup-images/callback-popup-icons/callback-popup-time-icon.svg";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const CallBackPopup = ({ toggleCallbackPopup }) => {
   const country_list = [
@@ -233,6 +235,7 @@ const CallBackPopup = ({ toggleCallbackPopup }) => {
     );
     setCurrentCountry(selectedCountry);
   }
+  const [selectedDate, setSelectedDate] = useState(null);
 
   return (
     <div className="callback-popup-background">
@@ -295,7 +298,11 @@ const CallBackPopup = ({ toggleCallbackPopup }) => {
               <div className="callback-popup-image-container">
                 <img src={CallbackPopupDateIcon} alt="" />
               </div>
-              <input type="text" placeholder="Enter the date" />
+              <DatePicker
+                selected={selectedDate}
+                onChange={(date) => setSelectedDate(date)}
+                placeholderText="Enter the date"
+              />
             </div>
             <div className="callback-popup-name-container">
               <span className="callback-popup-input-title">Time (9-17 hr)</span>
