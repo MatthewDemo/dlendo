@@ -47,7 +47,7 @@ const ProjectDetails = () => {
         <Location activeIndex={activeIndex} />
         <ReturnToDashboardButton />
         <UpButton />
-          <RelatedProjects />
+        <RelatedProjects />
       </div>
     </div>
   );
