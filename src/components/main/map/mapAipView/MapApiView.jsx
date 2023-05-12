@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./MapApiView.scss";
 import {
   GoogleMap,
@@ -9,22 +9,32 @@ import {
 import { useSelector } from "react-redux";
 import PopupHouseInfo from "./popup-house-info/PopupHouseInfo";
 
-const mainMapContainerStyle = {
-  width: '1010px',
-  height: '440px'
-};
 const center = { lat: 52.51631741228133, lng: 16.669496673372823 };
-const MapApiView = () => {
+const MapApiView = ({isMobile}) => {
+  const [mapStyle, setMapStyle] = useState(null);
+
+  useEffect(() => {
+    if (isMobile) {
+      setMapStyle({
+        width: "380px",
+        height: "440px",
+      });
+    } else {
+      setMapStyle({
+        width: "1010px",
+        height: "440px",
+      });
+    }
+  }, []);
   const allHouses = useSelector((state) => state.house.allHouses);
   const [selectedHouse, setSelectedHouse] = useState(null);
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyBVawNAYPUbUWksY9BAuD_eXd1i-DaB7ko",
   });
-
   if (!isLoaded) return <div> Map</div>;
   return (
     <GoogleMap
-    mapContainerStyle={mainMapContainerStyle}
+      mapContainerStyle={mapStyle}
       zoom={5}
       center={center}
       mapContainerClassName="map-api-container"

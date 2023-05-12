@@ -3,12 +3,12 @@ import "./Map.scss";
 import MapHeader from "./mapHeader/MapHeader";
 import MapApiView from "./mapAipView/MapApiView";
 
-const Map = () => {
+const Map = ({isMobile}) => {
   return (
-    <div>
+    <div className="map-container">
       <MapHeader />
-      <div style={{ width: "1030px", height: "424px" }}>
-        <MapApiView />
+      <div className="map-api-view-container" >
+        <MapApiView isMobile={isMobile}/>
       </div>
     </div>
   );

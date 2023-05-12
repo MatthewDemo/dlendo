@@ -1,0 +1,15 @@
+.map-api-view-container {
+  width: 1030px;
+  height: 424px;
+}
+
+@media only screen and (max-width: 480px) {
+  .map-container {
+    width: 374px;
+
+  }
+  .map-api-view-container {
+    width: 374px;
+    height: 424px;
+  }
+}

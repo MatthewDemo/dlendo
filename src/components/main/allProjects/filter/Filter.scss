@@ -1,3 +1,17 @@
+@media only screen and (max-width: 480px) {
+  .filter {
+    position: relative;
+  }
+  .filter-dropdown {
+    position: absolute;
+    display: flex;
+    width: 350px;
+    height: 70px;
+    top: 40px;
+    left: -20px;
+  }
+}
+
 .filter {
   display: flex;
   align-items: center;
@@ -21,10 +35,10 @@
 }
 
 .filter-button.active {
-    background: #FA544D;
-    border: 1px solid #323054;
-    color: #FFFFFF;
-  }
+  background: #fa544d;
+  border: 1px solid #323054;
+  color: #ffffff;
+}
 
 .filter-dropdown {
   display: flex;

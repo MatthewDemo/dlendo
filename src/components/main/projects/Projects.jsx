@@ -37,10 +37,11 @@ const PageNumber = styled.div`
   color: #ffffff;
 `;
 
-const Projects = () => {
+const Projects = ({isMobile}) => {
   const [activeButton, setActiveButton] = useState("new");
   const [currentPage, setCurrentPage] = useState(1);
-  const cardsPerPage = 4;
+  var cardsPerPage = 0;
+  {isMobile ?  cardsPerPage = 1 :  cardsPerPage = 4;}
   const allHouses = useSelector((state) => state.house.allHouses);
 
   const indexOfLastCard = currentPage * cardsPerPage;
@@ -62,7 +63,7 @@ const Projects = () => {
   };
 
   return (
-    <div>
+    <div className="projects-block">
       <div className="main-page-projects-header">
         <div className="main-page-projects-buttons-wrapper"> 
           <Button

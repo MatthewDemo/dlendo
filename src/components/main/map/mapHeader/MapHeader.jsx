@@ -9,13 +9,11 @@ const MapHeader = () => {
   };
 
   return (
-    <div>
-      <div className="map-header">
-        <span className="header-title">Dlendo project map</span>
-        <div className="search-container">
-          <p>Sort By:</p>
-          <Select />
-        </div>
+    <div className="map-header">
+      <span className="header-title">Dlendo project map</span>
+      <div className="search-container">
+        <p>Sort By:</p>
+        <Select />
       </div>
     </div>
   );

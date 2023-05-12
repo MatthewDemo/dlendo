@@ -43,5 +43,3 @@ const Filter = ({ setSelectedAssetClass }) => {
 };
 
 export default Filter;
-
-

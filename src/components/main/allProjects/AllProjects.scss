@@ -1,20 +1,34 @@
+@media only screen and (max-width: 480px) {
+  .all-projects-block {
+    width: 400px !important;
+    height: 89%;
+  }
+
+  .all-projects-header-text {
+    width: 380px;
+  }
+
+  .filter-sort-block {
+    width: 400px;
+    display: flex;
+    left: 0;
+    height: 30px;
+  }
+}
+
 .all-projects-block {
   margin-top: 60px;
   width: 1070px;
   position: relative;
-  
 
-  .shadow-navbar{
+  .shadow-navbar {
     position: absolute;
-    margin-left: -301px;
+    margin-left: -624px;
     margin-top: 1190px;
-  // top: 0;
-  // left: 0;
-  // bottom: 0;
-  height: 990px;
-  width: 280px;
-  background-color: #15173C;;
-  border-right: 1px solid #26264a;
+    height: 990px;
+    width: 280px;
+    background-color: #15173c;
+    border-right: 1px solid #26264a;
   }
 
   .all-projects-header-text {
@@ -25,13 +39,13 @@
     line-height: 30px;
     color: #8186af;
     margin-left: 20px;
+    width: 400px;
   }
 
   .filter-sort-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
   }
 
   .sort-block {

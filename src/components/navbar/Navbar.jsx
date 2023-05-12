@@ -6,10 +6,10 @@ import NavbarHomepage from "./navbarHomepage/NavbarHomepage";
 import NavbarSupport from "./navbarSupport/NavbarSupport";
 import "./Navbar.scss";
 
-const Navbar = ({height}) => {
+const Navbar = ({height, isMobile, isNavbarOpen, setIsNavbarOpen}) => {
   return (
-    <div className="navbar" style={{height: height}}>
-      <NavbarLogo />
+    <div className='navbar' style={{height: height}}>
+      <NavbarLogo isMobile={isMobile} isNavbarOpen={isNavbarOpen} setIsNavbarOpen={setIsNavbarOpen}/>
       <NavbarUserInfo />
       <NavbarUserPanel />
       <NavbarHomepage />

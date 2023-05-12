@@ -1,4 +1,25 @@
-.cards-wrapper{
+@media only screen and (max-width: 480px) {
+  .projects-block {
+    width: 363px;
+    position: relative;
+
+    .cards-wrapper {
+      width: 275px;
+      margin-left: 65px;
+      margin-top: 20px; 
+    }
+    .main-page-projects-header {
+      width: 303px;
+      .main-page-projects-switch-wrapper {
+        position: absolute;
+        left: -290px;
+        top: 75px;
+      }
+    }
+  }
+}
+
+.cards-wrapper {
   display: flex;
 }
 

@@ -5,6 +5,7 @@
     justify-content: center;
     width: 195px;
     margin-left: 32px;
+    position: relative;
 
     img {
       height: 40px;
@@ -14,5 +15,10 @@
       color: #ffffff;
       font-weight: 700;
       font-size: 35px;
+    }
+    .navbar-mobile-close-icon{
+      position: absolute;
+      right: -50px;
+      top: 5px;
     }
   }

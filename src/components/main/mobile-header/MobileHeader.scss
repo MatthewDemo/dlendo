@@ -1,0 +1,22 @@
+.mobile-header{
+    background: #15173C;
+    width: 420px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .moblie-header-logo{
+        margin-left: 20px;
+    }
+
+    .hamburger-button {
+        height: 40px;
+        width: 40px;
+        right: 20px;
+        top: 18px;
+        position: absolute;
+        z-index: 2;
+      }
+}

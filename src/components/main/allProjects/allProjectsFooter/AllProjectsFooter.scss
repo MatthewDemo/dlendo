@@ -1,3 +1,25 @@
+@media only screen and (max-width: 480px) {
+  .all-projects-footer-wrapper {
+    width: 350px;
+    height: 200px;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 90px;
+
+    .footer-load-more-button {
+      margin-top: 30px;
+      margin-left: 85px;
+    }
+
+    .all-projects-pagination-block {
+      top: 40px;
+      position: absolute;
+      right: 5.5rem;
+    }
+  }
+}
+
+
 .all-projects-footer-wrapper {
   display: flex;
   position: relative;
@@ -67,3 +89,5 @@
   margin-right: 5px;
   cursor: pointer;
 }
+
+
