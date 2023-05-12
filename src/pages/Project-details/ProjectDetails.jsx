@@ -40,7 +40,7 @@ const ProjectDetails = ({ isMobile, isNavbarOpen, setIsNavbarOpen }) => {
         setIsNavbarOpen={setIsNavbarOpen}
       />}
 
-       {/* {isMobile ? <FooterNavigation />  : <DashboardSubbar />}  */}
+       {isMobile ? <FooterNavigation />  : <DashboardSubbar />} 
       <div className="dashboard-content-block" id="dashboard-content-block">
         <ProjectDetailsBlock setActiveIndex={setActiveIndex} />
         <div className="calculator-milestones-container">
