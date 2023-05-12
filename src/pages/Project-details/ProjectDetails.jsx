@@ -18,13 +18,29 @@ import Location from "../../components/dashboard-content/location/Location";
 import ReturnToDashboardButton from "../../components/dashboard-content/return-to-dashboard-button/ReturnToDashboardButton";
 import UpButton from "../../components/dashboard-content/up-button/UpButton";
 import RelatedProjects from "../../components/dashboard-content/related-projects/RelatedProjects";
+import MobileHeader from "../../components/main/mobile-header/MobileHeader";
+import FooterNavigation from "../../components/dashboard-content/footer-navigation/FooterNavigation";
 
-const ProjectDetails = () => {
+
+const ProjectDetails = ({ isMobile, isNavbarOpen, setIsNavbarOpen }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
     <div className="dashboard-page">
-      <Navbar height="7550px" />
-      <DashboardSubbar />
+      {(!isMobile || isNavbarOpen) && (
+        <Navbar
+          isMobile={isMobile}
+          isNavbarOpen={isNavbarOpen}
+          setIsNavbarOpen={setIsNavbarOpen}
+          height="7550px"
+        />
+      )}
+      {isMobile && <MobileHeader
+        isMobile={isMobile}
+        isNavbarOpen={isNavbarOpen}
+        setIsNavbarOpen={setIsNavbarOpen}
+      />}
+
+       {/* {isMobile ? <FooterNavigation />  : <DashboardSubbar />}  */}
       <div className="dashboard-content-block" id="dashboard-content-block">
         <ProjectDetailsBlock setActiveIndex={setActiveIndex} />
         <div className="calculator-milestones-container">

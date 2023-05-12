@@ -11,7 +11,7 @@ import DocumentsIcon from "../../../assets/img/project-details-subbar/project-de
 import InvestmentCaseIcon from "../../../assets/img/project-details-subbar/project-details-subbar-investment-case-icon.svg";
 import ProjectCoastingIcon from "../../../assets/img/project-details-subbar/project-details-subbar-project-coasting-icon.svg";
 import FinanceStructureIcon from "../../../assets/img/project-details-subbar/project-details-subbar-finance-structure-icon.svg";
-// import MarketOverviewIcon from "../../../assets/img/project-details-subbar/project-details-subbar-market-overview-icon.svg";
+import MarketOverviewIcon from "../../../assets/img/project-details-subbar/project-details-subbar-market-overview-icon.svg";
 import DlendoRatingIcon from "../../../assets/img/project-details-subbar/project-details-subbar-dlendo-rating-icon.svg";
 import LocationIcon from "../../../assets/img/project-details-subbar/project-details-subbar-location-icon.svg";
 
@@ -69,10 +69,10 @@ const DashboardSubbarItems = () => {
         <img src={FinanceStructureIcon} alt="" />{" "}
         <span className="subbar-text">Finance structure</span>
       </li>
-      {/* <li>
+      <li>
         <img src={MarketOverviewIcon} alt="" />{" "}
         <span className="subbar-text">Market overview</span>
-      </li> */}
+      </li>
       <li onClick={() => scrollToComponent("dlendo-rating-block")}>
         <img src={DlendoRatingIcon} alt="" />{" "}
         <span className="subbar-text">Dlendo rating</span>

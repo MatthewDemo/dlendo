@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import "./Home.scss";
 import Main from "../../components/main/Main";
 import Navbar from "../../components/navbar/Navbar";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 
-const Home = () => {
-  const isMobile = useMediaQuery({ maxWidth: 767 });
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+const Home = ({isMobile, isNavbarOpen, setIsNavbarOpen }) => {
+  // const isMobile = useMediaQuery({ maxWidth: 767 });
+  // const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   return (
     <div className="home">

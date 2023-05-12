@@ -1,13 +1,26 @@
 .subbar {
+  position: absolute;
   width: 285px;
   height: 7550px;
   background: #13153a;
   border: 1px solid #323054;
   border-left: none;
   border-bottom: none;
+  z-index: 10;
+  left: 280px;
 
-  margin-left: 280px;
   span {
     white-space: nowrap;
   }
 }
+
+
+// @media only screen and (max-width: 480px) {
+//   .subbar{
+//     position: fixed;
+//     bottom: 0;
+//     left: 0;
+//     height: 150px;
+//     width: 390px;
+//   }
+// }

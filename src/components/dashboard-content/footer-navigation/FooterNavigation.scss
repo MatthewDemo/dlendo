@@ -1,0 +1,42 @@
+.footer-navigation {
+  background: #15173c;
+  border-top: 1px solid #323054;
+  height: 65px;
+  width: 395px;
+  position: fixed;
+  bottom: 260px;
+  z-index: 2;
+
+  .mobile-subbar-items {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 382px;
+    height: 300px;
+    background-color: #15173c;
+    margin-left: -40px;
+    margin-top: -10px;
+    border: 1px solid #323054;
+    border-left: none;
+    border-top: none;
+    li {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      color: #fff;
+      background-color: #15173c;
+      border: 1px solid #323054;
+      cursor: pointer;
+
+      span {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .open-subbar-button {
+    position: absolute;
+    gap: 0;
+    right: 20px;
+    top: 10px;
+  }
+}

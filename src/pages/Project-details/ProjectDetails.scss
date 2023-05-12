@@ -2,13 +2,35 @@
   display: flex;
   flex-direction: row;
   height: 100vh;
-  position: relative;
 }
 
 @media only screen and (min-width: 1400px) {
   .dashboard-page {
-    margin-left: calc((100vw - 1400px) / 2 );
+    margin-left: calc((100vw - 1500px) / 2);
   }
+}
+
+@media only screen and (max-width: 480px) {
+  .dashboard-page {
+    width: 390px;
+   
+  }
+  .dashboard-content-block {
+    position: absolute;
+    left: -365px;
+    top: -130px;
+    transform: scale(0.49);
+  }
+}
+
+.dashboard-content-block {
+  order: 1;
+  flex-grow: 1;
+  padding: 20px;
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  max-width: calc(100% - 592px);
 }
 
 .dashboard-item-title {
@@ -22,14 +44,9 @@
   top: -50px;
 }
 
-.dashboard-content-block {
-  order: 1;
-  flex-grow: 1;
-  padding: 20px;
-  position: relative;
-}
-
 .calculator-milestones-container {
   display: flex;
   margin-top: 520px;
+  padding-right: 0;
+  width: 775px;
 }

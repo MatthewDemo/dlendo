@@ -2,17 +2,19 @@
   .projects-block {
     width: 363px;
     position: relative;
+    // border: 2px solid pink;
+    margin-top: 70px;
 
     .cards-wrapper {
       width: 275px;
       margin-left: 65px;
-      margin-top: 20px; 
+      margin-top: 20px;
     }
     .main-page-projects-header {
       width: 303px;
       .main-page-projects-switch-wrapper {
         position: absolute;
-        left: -290px;
+        left: -310px;
         top: 75px;
       }
     }
