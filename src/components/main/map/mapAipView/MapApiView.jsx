@@ -16,7 +16,7 @@ const MapApiView = ({isMobile}) => {
   useEffect(() => {
     if (isMobile) {
       setMapStyle({
-        width: "360px",
+        width: "380px",
         height: "440px",
       });
     } else {
